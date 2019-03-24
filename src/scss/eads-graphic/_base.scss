@@ -5,3 +5,13 @@ body {
   line-height: 1.4;
   font-weight: 300 !important;
 }
+
+// Changes Highlight Color 
+::-moz-selection {
+  background-color: $black;
+  color: $white;
+}
+::selection {
+  background-color: $black;
+  color: $white;
+}

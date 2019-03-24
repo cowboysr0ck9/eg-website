@@ -15,7 +15,7 @@ export default class ClientTestimonials extends React.Component {
           <Row>
             <Col xs={12}>
               <p className="mb-0 text-primary text-center">
-                DON’T TAKE OUR WORD FOR IT
+                WHAT CLIENTS HAVE TO SAY
               </p>
               <h1 className="text-center">Client Testimonials</h1>
             </Col>

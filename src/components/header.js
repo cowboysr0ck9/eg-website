@@ -5,11 +5,11 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-
   Nav,
   NavItem,
   Container,
 } from "reactstrap"
+import HambugerIcon from "../images/hamburger-menu.svg"
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -35,7 +35,14 @@ export default class Header extends React.Component {
               <img src={EadsGraphicLogo} alt="EadsGraphic Official Logo" />
             </Link>
 
-            <NavbarToggler onClick={this.toggle} />
+            <img
+              src={HambugerIcon}
+              className="navbar-toggler"
+              onClick={this.toggle}
+              alt="Eadsgraphic mobile menu"
+              height={32}
+            />
+
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto align-items-center" navbar>
                 <NavItem>
@@ -63,7 +70,11 @@ export default class Header extends React.Component {
                 </NavItem>
 
                 <NavItem>
-                  <Link id="nav-cta-btn" className="btn btn-primay nav-link" to="/contact-us">
+                  <Link
+                    id="nav-cta-btn"
+                    className="btn btn-primay nav-link"
+                    to="/contact-us"
+                  >
                     Free Quote
                   </Link>
                 </NavItem>

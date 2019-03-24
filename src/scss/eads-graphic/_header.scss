@@ -14,5 +14,9 @@ header .nav-item {
 }
 
 header .navbar {
-    padding: .75rem 0;
+  padding: 0.75rem 0;
+}
+
+.navbar-toggler {
+  cursor: pointer;
 }

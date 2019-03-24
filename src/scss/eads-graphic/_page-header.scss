@@ -25,3 +25,35 @@
   position: relative;
   top: -160px;
 }
+
+// Mobile Only Styling
+
+@media (max-width: 767.98px) {
+  .eg-page-header {
+    height: 100vh;
+  }
+
+  .full-height {
+    height: 100%;
+  }
+
+  .eg-page-header h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1;
+    color: rgba(208, 213, 218, 0.25);
+    letter-spacing: 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .eg-page-header p {
+    font-weight: 100;
+    font-size: 1rem;
+    color: $black;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative;
+    top: -47px;
+  }
+}

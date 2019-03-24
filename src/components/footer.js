@@ -20,31 +20,31 @@ export default class Footer extends React.Component {
               <img src={EadsGraphicLogo} alt="EadsGraphic Official Logo" />
               <div class="d-flex mt-4">
                 <div className="eg-social-btn mr-3">
-                  <a href="#">
+                  <a href="https://www.behance.net/tylereads">
                     <img src={BehanceSocial} width={32} />
                   </a>
                 </div>
 
                 <div className="eg-social-btn mr-3">
-                  <a href="#">
+                  <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
                     <img src={YoutubeSocial} width={32} />
                   </a>
                 </div>
 
                 <div className="eg-social-btn mr-3">
-                  <a href="#">
+                  <a href="https://www.instagram.com/eadsgraphic/?hl=en">
                     <img src={InstagramSocial} height={28} />
                   </a>
                 </div>
 
                 <div className="eg-social-btn mr-3">
-                  <a href="#">
+                  <a href="https://dribbble.com/eadsgraphic">
                     <img src={DribbbleSocial} height={28} />
                   </a>
                 </div>
 
                 <div className="eg-social-btn">
-                  <a href="#">
+                  <a href="https://github.com/EadsGraphic">
                     <img src={GithubSocial} height={28} />
                   </a>
                 </div>
