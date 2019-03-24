@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="382px" height="1055px" viewBox="0 0 382 1055" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9AC3FF" offset="0%"></stop>
+            <stop stop-color="#1A63CD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hero-Image" transform="translate(-1058.000000, -10.000000)" fill="url(#linearGradient-1)">
+            <path d="M1440.0243,10.0000016 L1440.0243,1065.08185 C1423.25746,1055.2951 1407.70064,1043.25205 1393.83029,1029.14101 L1121.39583,751.979081 C1051.98574,681.364534 1038.01517,573.201002 1087.20533,487.267865 L1300.30891,114.984872 C1331.7162,60.1176599 1383.08181,23.8191581 1440.0243,10 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

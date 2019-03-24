@@ -1,42 +1,77 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import EadsGraphicLogo from "../images/EadsGraphic-main-logo.svg"
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+  Nav,
+  NavItem,
+  Container,
+} from "reactstrap"
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+export default class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.toggle = this.toggle.bind(this)
+    this.state = {
+      isOpen: false,
+    }
+  }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    })
+  }
+  render() {
+    return (
+      <header>
+        <Container>
+          <Navbar expand="md">
+            <Link className="navbar-brand" to="/">
+              <img src={EadsGraphicLogo} alt="EadsGraphic Official Logo" />
+            </Link>
+
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto align-items-center" navbar>
+                <NavItem>
+                  <Link className="nav-link" to="/about-us">
+                    About
+                  </Link>
+                </NavItem>
+
+                <NavItem>
+                  <Link className="nav-link" to="/services">
+                    Services
+                  </Link>
+                </NavItem>
+
+                <NavItem>
+                  <Link className="nav-link" to="/our-work">
+                    Our Work
+                  </Link>
+                </NavItem>
+
+                <NavItem>
+                  <Link className="nav-link" to="/contact-us">
+                    Contact
+                  </Link>
+                </NavItem>
+
+                <NavItem>
+                  <Link id="nav-cta-btn" className="btn btn-primay nav-link" to="/contact-us">
+                    Free Quote
+                  </Link>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
+        </Container>
+      </header>
+    )
+  }
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

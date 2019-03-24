@@ -1,0 +1,18 @@
+header .nav-link {
+  color: $black;
+  font-weight: 400;
+  font-size: 0.875rem;
+  border-bottom: 2px solid transparent;
+}
+
+header .nav-link:hover {
+  border-color: $primary;
+}
+
+header .nav-item {
+  padding: 0 1rem;
+}
+
+header .navbar {
+    padding: .75rem 0;
+}

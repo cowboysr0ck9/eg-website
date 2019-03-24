@@ -1,26 +1,28 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
-import CallToAction from "../components/callToAction"
-
-const NotFoundPage = () => (
+import CallToAction from '../components/callToAction'
+const CopyrightPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+
     <section className="eg-page-header">
       <Header siteTitle={"EadsGraphic"} />
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>NOT FOUND</h1>
+            <h1>Copyright</h1>
             <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
           </Col>
         </Row>
       </Container>
     </section>
+
     <CallToAction />
   </Layout>
 )
 
-export default NotFoundPage
+export default CopyrightPage

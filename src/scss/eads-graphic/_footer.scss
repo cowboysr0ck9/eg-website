@@ -1,0 +1,29 @@
+footer .eg-email {
+  color: #1f2025;
+}
+footer h4 {
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+footer {
+  font-size: 14px;
+}
+
+footer h4:before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: -8px;
+  background-color: #3c83e9;
+}
+
+footer .list-unstyled li {
+  padding: 0.25rem 0;
+}
+
+footer .list-unstyled a {
+  color: #1f2025;
+  font-weight: 300;
+}

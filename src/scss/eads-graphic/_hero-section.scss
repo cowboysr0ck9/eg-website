@@ -1,0 +1,37 @@
+.eg-section-square {
+  background-color: #1f2025;
+  color: white;
+  font-size: 2.25rem;
+  line-height: 1.15;
+  font-weight: 700;
+  height: 60px;
+  padding-right: 0.25rem;
+  min-width: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.eg-section-lead {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 300px;
+}
+
+.eg-social-btn {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eg-section-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $primary;
+  line-height: 1;
+}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="39px" viewBox="0 0 38 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Browser coding</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-273.000000, -450.000000)">
+            <g id="Why-Us?" transform="translate(-3.000000, 246.000000)">
+                <g id="Browser-coding" transform="translate(277.000000, 205.000000)">
+                    <path d="M27.5,36.66 C26,37.56 5,36.66 5,36.66 C5,36.66 0.38,37.44 0.5,30.94 C0.6,25.6 0.37,14.88 0.41,10.94 L0.41,2.62 L4.31,0.94 C4.31,0.94 8.94,1.44 8.94,1.42 C8.94,2.55 10.35,4.42 10.94,5.33 C12.42,7.73 17.17,10.47 16.94,13.5 C16.5,18.5 16.85,28.57 25.37,34.16 C25.31,34.16 29,35.76 27.5,36.66 Z" id="Path" fill-opacity="0.3" fill="#3C83E9" fill-rule="nonzero"></path>
+                    <path d="M6.75,9.46 L32.8,9.46 C34.5673112,9.46 36,8.0273112 36,6.26 L36,5.26 C35.9890515,2.88420254 34.0657975,0.960948549 31.69,0.95 L4.31,0.95 C1.93807697,0.960899123 0.0164087795,2.87810868 0,5.25 L0,32.63 C0.0109485495,35.0057975 1.93420254,36.9290515 4.31,36.94 L31.69,36.94 C34.0657975,36.9290515 35.9890515,35.0057975 36,32.63 L36,14.19" id="Path" stroke="#1F2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M18.63,4.94 L16,4.94" id="Path" stroke="#1F2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M25.31,4.94 L22.69,4.94" id="Path" stroke="#1F2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M32,4.94 L29.38,4.94" id="Path" stroke="#1F2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Oval" fill="#1F2025" fill-rule="nonzero" cx="4" cy="9.46" r="1"></circle>
+                    <path d="M21.38,15.19 L14.88,31.94" id="Path" stroke="#1F2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path" stroke="#1F2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="25.56 19.31 29.69 23.44 25.31 27.81"></polyline>
+                    <polyline id="Path" stroke="#1F2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="10.88 19.37 6.75 23.49 11.13 27.87"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
