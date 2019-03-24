@@ -68,23 +68,23 @@ const IndexPage = () => (
               Get Free Quote
             </Button>
             <div className="mt-4 d-flex justify-content-between">
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
                 <img src={YoutubeSocial} height={32} />
               </a>
 
-              <a href="#">
+              <a href="https://www.behance.net/tylereads">
                 <img src={BehanceSocial} height={32} />
               </a>
 
-              <a href="#">
+              <a href="https://www.instagram.com/eadsgraphic/?hl=en">
                 <img src={InstagramSocial} height={32} />
               </a>
 
-              <a href="#">
+              <a href="https://dribbble.com/eadsgraphic">
                 <img src={DribbbleSocial} height={32} />
               </a>
 
-              <a href="#">
+              <a href="https://github.com/EadsGraphic">
                 <img src={GithubSocial} height={32} />
               </a>
             </div>
@@ -211,7 +211,7 @@ const IndexPage = () => (
     <section className="py-96">
       <Container>
         <Row>
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">
             <div className="d-flex justify-content-start">
               <div className="eg-section-square">01</div>
               <p className="ml-3 eg-section-lead">
@@ -227,8 +227,12 @@ const IndexPage = () => (
             </Button>
           </Col>
 
-          <Col xs={12} sm={6}>
-            <img src={DesignerSection} />
+          <Col xs={12} sm={6} className="order-0 order-sm-1">
+            <img
+              src={DesignerSection}
+              className="svg-responsive"
+              alt="Eadsgraphic ui/ux and graphic design"
+            />
           </Col>
         </Row>
       </Container>
@@ -239,10 +243,14 @@ const IndexPage = () => (
       <Container>
         <Row>
           <Col xs={12} sm={6}>
-            <img src={DeveloperSection} />
+            <img
+              src={DeveloperSection}
+              className="svg-responsive"
+              alt="Eadsgraphic web development"
+            />
           </Col>
 
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={6} className="mt-5 mt-sm-0">
             <div className="d-flex justify-content-start">
               <div className="eg-section-square">02</div>
               <p className="ml-3 eg-section-lead">
@@ -265,7 +273,7 @@ const IndexPage = () => (
     <section className="py-96">
       <Container>
         <Row>
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">
             <div className="d-flex justify-content-start ">
               <div className="eg-section-square">03</div>
               <p className="ml-3 eg-section-lead">
@@ -281,8 +289,12 @@ const IndexPage = () => (
             </Button>
           </Col>
 
-          <Col xs={12} sm={6}>
-            <img src={MarketerSection} />
+          <Col xs={12} sm={6} className="order-0 order-sm-1">
+            <img
+              src={MarketerSection}
+              className="svg-responsive"
+              alt="Eadsgraphic digital marketing"
+            />
           </Col>
         </Row>
       </Container>

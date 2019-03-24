@@ -3,4 +3,31 @@
   box-shadow: 0 8px 16px 0 rgba(31, 32, 37, 0.1);
   border-radius: 8px;
   border: none;
+  padding: 3.5rem 0.5rem 1.25rem 0.5rem;
+}
+
+.eg-testimonial {
+  min-height: 424px;
+  position: relative;
+}
+
+.eg-testimonial-avatar {
+  margin-bottom: -48px;
+  position: relative;
+  z-index: 2;
+}
+
+.eg-sub-title {
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.eg-sub-title:after {
+  content: "";
+  height: 2px;
+  width: 48px;
+  background-color: $primary;
+  position: absolute;
+  bottom: -8px;
+  left: calc(50% - 24px);
 }

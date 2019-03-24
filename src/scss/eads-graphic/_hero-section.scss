@@ -28,10 +28,17 @@
 }
 
 .eg-section-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   color: $primary;
   line-height: 1;
 }
 
+// Client Testiomonials
+
+#eg-testimonials {
+  background-image: url("../images/quote-icon.webp");
+  background-repeat: no-repeat;
+  background-position: top 2% center;
+}

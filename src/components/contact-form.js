@@ -51,7 +51,7 @@ class ContactForm extends React.Component {
               <Form
                 name="contact"
                 method="post"
-                action="/thanks/"
+                action="/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
@@ -67,11 +67,17 @@ class ContactForm extends React.Component {
 
                 <FormGroup>
                   <Label>Name:</Label>
-                  <Input type="text" name="name" onChange={this.handleChange} />
+                  <Input
+                    size="lg"
+                    type="text"
+                    name="name"
+                    onChange={this.handleChange}
+                  />
                 </FormGroup>
                 <FormGroup>
                   <Label>Email:</Label>
                   <Input
+                    size="lg"
                     type="email"
                     name="email"
                     onChange={this.handleChange}
@@ -81,6 +87,7 @@ class ContactForm extends React.Component {
                 <FormGroup>
                   <Label>Message:</Label>
                   <Input
+                    size="lg"
                     type="textarea"
                     name="message"
                     onChange={this.handleChange}
