@@ -1,5 +1,6 @@
-import React from "react";
+import React from "react"
 import { Button, Row, Col, Container } from "reactstrap"
+import { Link } from "gatsby"
 
 export default class CallToAction extends React.Component {
   render() {
@@ -13,7 +14,9 @@ export default class CallToAction extends React.Component {
                 Provide us with your contact information and one of our team
                 members will reach out to you with the next steps.
               </p>
-              <Button id="eg-main-cta-btn" color="primary">Contact Us</Button>
+              <Link to="/contact-us" id="eg-main-cta-btn" className="btn">
+                Contact Us
+              </Link>
             </Col>
           </Row>
         </Container>

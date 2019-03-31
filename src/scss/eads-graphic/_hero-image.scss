@@ -12,6 +12,7 @@
   border-bottom: 1px solid $gray-300;
   background-position: center, right center;
   background-repeat: repeat, no-repeat;
+  position: relative;
 }
 
 #eg-hero h1 {
@@ -50,4 +51,14 @@ header {
   justify-content: center;
   align-items: center;
   width: 10rem;
+}
+
+// Mobile Only
+@media (max-width: 767.98px) {
+  .eg-social-hero {
+    position: absolute;
+    bottom: -190px;
+    left: calc(50% - 159px);
+    width: 85%;
+  }
 }

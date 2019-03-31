@@ -7,6 +7,7 @@ import Header from "../components/header"
 import CallToAction from "../components/callToAction"
 import Typed from "react-typed"
 import ClientTestimonials from "../components/clientTestimonials"
+import { Link } from "gatsby"
 // Imports Why Us? Icons
 import DevelopersIcon from "../images/why-us-icons/eads-graphic-developers-icon.svg"
 import DesignersIcon from "../images/why-us-icons/eads-graphic-graphic-design-icon.svg"
@@ -61,13 +62,15 @@ const IndexPage = () => (
               EadsGraphic is a creative technology agency operating in the
               greater Philadelphia area.
             </p>
-            <Button className="mt-4 mr-2" color="primary">
+
+            <Link to="/services" className="mt-4 mr-2 btn btn-primary">
               Our Services
-            </Button>
-            <Button className="mt-4" outline color="primary">
-              Get Free Quote
-            </Button>
-            <div className="mt-4 d-flex justify-content-between">
+            </Link>
+            <Link to="/contact-us" className="mt-4 mr-2 btn btn-link">
+              Free Quote
+            </Link>
+
+            <div className="mt-4 d-flex justify-content-between eg-social-hero">
               <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
                 <img src={YoutubeSocial} height={32} />
               </a>
