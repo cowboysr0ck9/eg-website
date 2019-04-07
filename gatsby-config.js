@@ -3,6 +3,7 @@ module.exports = {
     title: `EadsGraphic`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@eadsgraphic`,
+    siteUrl: `https://www.eadsgraphic.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,5 +36,6 @@ module.exports = {
         trackingId: "UA-78811458-1",
       },
     },
+    `gatsby-plugin-sitemap`
   ],
 }
