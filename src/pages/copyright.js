@@ -7,7 +7,7 @@ import Header from "../components/header"
 import CallToAction from '../components/callToAction'
 const CopyrightPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Copyright" keywords={[`gatsby`, `application`, `react`]} />
 
     <section className="eg-page-header">
       <Header siteTitle={"EadsGraphic"} />

@@ -8,7 +8,7 @@ import CallToAction from '../components/callToAction'
 
 const TermsAndConditionsPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Terms" keywords={[`gatsby`, `application`, `react`]} />
     <section className="eg-page-header">
       <Header siteTitle={"EadsGraphic"} />
       <Container className="d-flex justify-content-center align-items-center full-height">
@@ -18,6 +18,11 @@ const TermsAndConditionsPage = () => (
             <p>
               Conditions<span className="text-primary"> We</span> Follow
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <p>Test</p>
           </Col>
         </Row>
       </Container>

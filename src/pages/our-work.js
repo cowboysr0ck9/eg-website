@@ -8,13 +8,13 @@ import CallToAction from '../components/callToAction'
 
 const OurWorkPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
     <section className="eg-page-header">
       <Header siteTitle={"EadsGraphic"} />
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>Work</h1>
+            <h1>Our Work</h1>
             <p>
               Clients <span className="text-primary">Love</span> Us
             </p>

@@ -8,7 +8,7 @@ import CallToAction from '../components/callToAction'
 
 const AboutUsPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <section className="eg-page-header">
       <Header siteTitle={"EadsGraphic"} />
       <Container className="d-flex justify-content-center align-items-center full-height">

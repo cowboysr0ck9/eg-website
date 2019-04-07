@@ -7,7 +7,7 @@ import CallToAction from "../components/callToAction"
 import { Link } from "gatsby"
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="404 Error" />
     <section className="eg-page-header">
       <Header siteTitle={"EadsGraphic"} />
       <Container className="d-flex justify-content-center align-items-center full-height">

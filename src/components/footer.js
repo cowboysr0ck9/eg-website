@@ -85,16 +85,24 @@ export default class Footer extends React.Component {
                   <Link to="/services#eg-service-web-development">SEO</Link>
                 </li>
                 <li>
-                  <Link to="/services#eg-service-graphic-design">UI/UX Design</Link>
+                  <Link to="/services#eg-service-graphic-design">
+                    UI/UX Design
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/services#eg-service-graphic-design">Graphic Design</Link>
+                  <Link to="/services#eg-service-graphic-design">
+                    Graphic Design
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/services#eg-service-digital-marketing">Digital Marketing</Link>
+                  <Link to="/services#eg-service-digital-marketing">
+                    Digital Marketing
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/services#eg-service-web-development">Web Development</Link>
+                  <Link to="/services#eg-service-web-development">
+                    Web Development
+                  </Link>
                 </li>
               </ul>
             </Col>
@@ -106,16 +114,16 @@ export default class Footer extends React.Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
+                  <Link to="/about-us">About</Link>
+                </li>
+                <li>
                   <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <Link to="/about-us">About Us</Link>
+                  <Link to="/our-work">Work</Link>
                 </li>
                 <li>
-                  <Link to="/our-work">Our Work</Link>
-                </li>
-                <li>
-                  <Link to="/contact-us">Contact Us</Link>
+                  <Link to="/contact-us">Contact</Link>
                 </li>
               </ul>
             </Col>
