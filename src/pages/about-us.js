@@ -22,6 +22,15 @@ const AboutUsPage = () => (
         </Row>
       </Container>
     </section>
+    <section>
+      <Container>
+        <Row>
+          <Col>
+          <Link to="/">Test Link</Link>
+          </Col>
+        </Row>
+      </Container>
+    </section>
     <CallToAction />
   </Layout>
 )

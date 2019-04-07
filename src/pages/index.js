@@ -2,12 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
-import { Container, Row, Col, Button } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import Header from "../components/header"
 import CallToAction from "../components/callToAction"
 import Typed from "react-typed"
 import ClientTestimonials from "../components/clientTestimonials"
 import { Link } from "gatsby"
+import OurServices from "../components/ourServices"
+
 // Imports Why Us? Icons
 import DevelopersIcon from "../images/why-us-icons/eads-graphic-developers-icon.svg"
 import DesignersIcon from "../images/why-us-icons/eads-graphic-graphic-design-icon.svg"
@@ -32,8 +34,8 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Helmet>
       <link
+        rel="preconnect"
         href="https://fonts.googleapis.com/css?family=Roboto:100,400,700"
-        rel="stylesheet"
       />
       <meta
         name="google-site-verification"
@@ -76,23 +78,43 @@ const IndexPage = () => (
 
             <div className="mt-4 d-flex justify-content-between eg-social-hero">
               <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
-                <img src={YoutubeSocial} height={32} />
+                <img
+                  src={YoutubeSocial}
+                  height={32}
+                  alt="Follow EadsGraphic on YouTube"
+                />
               </a>
 
               <a href="https://www.behance.net/tylereads">
-                <img src={BehanceSocial} height={32} />
+                <img
+                  src={BehanceSocial}
+                  height={32}
+                  alt="Follow EadsGraphic on BeHance"
+                />
               </a>
 
               <a href="https://www.instagram.com/eadsgraphic/?hl=en">
-                <img src={InstagramSocial} height={32} />
+                <img
+                  src={InstagramSocial}
+                  height={32}
+                  alt="Follow EadsGraphic on Instagram"
+                />
               </a>
 
               <a href="https://dribbble.com/eadsgraphic">
-                <img src={DribbbleSocial} height={32} />
+                <img
+                  src={DribbbleSocial}
+                  height={32}
+                  alt="Follow EadsGraphic on Dribbble"
+                />
               </a>
 
               <a href="https://github.com/EadsGraphic">
-                <img src={GithubSocial} height={32} />
+                <img
+                  src={GithubSocial}
+                  height={32}
+                  alt="Follow EadsGraphic on GitHub"
+                />
               </a>
             </div>
           </Col>
@@ -100,7 +122,7 @@ const IndexPage = () => (
       </Container>
     </section>
     {/* Why Us? Section */}
-    <section className="py-96">
+    <section className="py-192">
       <Container>
         <Row>
           <Col xs={12} className="text-center text-primary">
@@ -115,9 +137,9 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={DevelopersIcon} />
+            <img src={DevelopersIcon} alt="EadsGraphic developers" />
             <div className="ml-3">
-              <p className="text-primary mb-0">Developers</p>
+              <p className="text-primary mb-3 fw-500">Developers</p>
               <p>
                 Professional web developers will ensure your idea is fully coded
                 to modern day web standards.
@@ -131,9 +153,9 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={DesignersIcon} />
+            <img src={DesignersIcon} alt="EadsGraphic designers" />
             <div className="ml-3">
-              <p className="text-primary mb-0">Designers</p>
+              <p className="text-primary mb-3 fw-500">Designers</p>
               <p>
                 Programs such as Sketch and Photoshop ensure we deliver pixel
                 perfect designs to clients.
@@ -147,9 +169,9 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={MarketersIcon} />
+            <img src={MarketersIcon} alt="EadsGraphic marketers" />
             <div className="ml-3">
-              <p className="text-primary mb-0">Marketers</p>
+              <p className="text-primary mb-3 fw-500">Marketers</p>
               <p>
                 Fuel organic web traffic to your website by utilizing our
                 advanced knowledge of SEO tactics.
@@ -163,9 +185,12 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={SatisfactionIcon} />
+            <img
+              src={SatisfactionIcon}
+              alt="EadsGraphic customer satisfaction"
+            />
             <div className="ml-3">
-              <p className="text-primary mb-0">Satisfaction</p>
+              <p className="text-primary mb-3 fw-500">Satisfaction</p>
               <p>
                 Clients complement our detail oriented approach to each and
                 every project we work on.
@@ -179,9 +204,12 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={CommunicationIcon} />
+            <img
+              src={CommunicationIcon}
+              alt="EadsGraphic communication skills"
+            />
             <div className="ml-3">
-              <p className="text-primary mb-0">Communication</p>
+              <p className="text-primary mb-3 fw-500">Communication</p>
               <p>
                 Projects are driven by honest and open communcation between both
                 our team and our cleints.
@@ -195,9 +223,12 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={CuttingEdgeIcon} />
+            <img
+              src={CuttingEdgeIcon}
+              alt="EadsGraphic utilizes cutting edge web technology"
+            />
             <div className="ml-3">
-              <p className="text-primary mb-0">Cutting Edge</p>
+              <p className="text-primary mb-3 fw-500">Cutting Edge</p>
               <p>
                 Team members make it a priority to stay up to date with the
                 latest in technology and design.
@@ -215,7 +246,7 @@ const IndexPage = () => (
     </section>
 
     {/* Designers */}
-    <section className="py-96">
+    <section className="py-192">
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">
@@ -249,7 +280,7 @@ const IndexPage = () => (
     </section>
 
     {/* Developers */}
-    <section className="py-96 bg-light">
+    <section className="py-192 bg-light">
       <Container>
         <Row>
           <Col xs={12} sm={6}>
@@ -283,7 +314,7 @@ const IndexPage = () => (
     </section>
 
     {/* Marketers */}
-    <section className="py-96">
+    <section className="py-192">
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">
@@ -316,12 +347,8 @@ const IndexPage = () => (
       </Container>
     </section>
 
-    {/* Our Services */}
-    <section className="py-96">
-      <p>Our services go here</p>
-    </section>
+    <OurServices />
 
-    {/* Client Testimonials */}
     <ClientTestimonials />
     <CallToAction />
   </Layout>

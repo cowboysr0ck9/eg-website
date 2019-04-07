@@ -7,8 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 import Footer from "../components/footer"
 import "../scss/bundles.scss"
 

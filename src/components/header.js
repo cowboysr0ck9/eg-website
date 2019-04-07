@@ -4,7 +4,6 @@ import EadsGraphicLogo from "../images/EadsGraphic-main-logo.svg"
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   Nav,
   NavItem,
   Container,

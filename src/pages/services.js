@@ -245,7 +245,7 @@ const ServicesPage = () => (
               <li>
                 <h6>Print Design</h6>
                 <p>
-                  Reach cleints by using printed materials such as posters or
+                  Reach clients by using printed materials such as posters or
                   business cards
                 </p>
               </li>

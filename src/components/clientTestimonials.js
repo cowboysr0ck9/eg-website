@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Row, Col, Container, Card, CardBody } from "reactstrap"
 
 // Testimonial Avatar Images
-import JamieErfle from "../images/testimonials/jamie-erfle-eadsgraphic-testimomial.webp"
-import MikeCiunci from "../images/testimonials/mike-ciunci-eadsgraphic-testimomial.webp"
-import AnthonyGoins from "../images/testimonials/anthony-goins-eadsgraphic-testimomial.webp"
+import JamieErfle from "../images/testimonials/jamie-erfle-eadsgraphic-testimomial.png"
+import MikeCiunci from "../images/testimonials/mike-ciunci-eadsgraphic-testimomial.png"
+import AnthonyGoins from "../images/testimonials/anthony-goins-eadsgraphic-testimomial.png"
 
 export default class ClientTestimonials extends React.Component {
   render() {

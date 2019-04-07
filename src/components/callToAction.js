@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, Row, Col, Container } from "reactstrap"
+import { Row, Col, Container } from "reactstrap"
 import { Link } from "gatsby"
 
 export default class CallToAction extends React.Component {
