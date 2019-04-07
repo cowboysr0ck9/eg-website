@@ -35,6 +35,10 @@ const IndexPage = () => (
         href="https://fonts.googleapis.com/css?family=Roboto:100,400,700"
         rel="stylesheet"
       />
+      <meta
+        name="google-site-verification"
+        content="UYn5qbydYxU2eq-N0ipCCNWDu38kKJcFK7_Hdt-A1So"
+      />
     </Helmet>
 
     {/* Hero Section */}
@@ -202,10 +206,7 @@ const IndexPage = () => (
           </Col>
 
           <Col xs={12} className="d-flex justify-content-center mt-3 mt-sm-5">
-          <Link
-              to="/services"
-              className="btn btn-outline-primary"
-            >
+            <Link to="/services" className="btn btn-outline-primary">
               More Info
             </Link>
           </Col>
