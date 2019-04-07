@@ -14,7 +14,7 @@ const ContactUsPage = () => (
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>Contact Us</h1>
+            <h1>Contact</h1>
             <p>
               Time <span className="text-primary">To</span> Talk
             </p>
@@ -23,8 +23,8 @@ const ContactUsPage = () => (
       </Container>
     </section>
 
-    <section className="py-96 bg-light">
-      <p className="text-center text-primary h4">FREQUENTLY ASKED QUESTIONS</p>
+    <section className="py-96 bg-light" id="eg-faq-section">
+      <p className="text-center text-primary">FREQUENTLY ASKED QUESTIONS</p>
       <h1 className="text-center">What can we answer for you?</h1>
     </section>
 

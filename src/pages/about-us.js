@@ -14,7 +14,7 @@ const AboutUsPage = () => (
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>About Us</h1>
+            <h1>About</h1>
             <p>
               Two <span className="text-primary">Creative</span> Brothers
             </p>

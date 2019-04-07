@@ -14,9 +14,9 @@ const PrivacyPolicyPage = () => (
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>Privacy Policy</h1>
+            <h1>Privacy</h1>
             <p>
-              Two <span className="text-primary">Creative</span> Brothers
+              We<span className="text-primary"> Respect</span> Privacy
             </p>
           </Col>
         </Row>

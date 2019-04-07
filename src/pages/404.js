@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import CallToAction from "../components/callToAction"
-
+import { Link } from "gatsby"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
@@ -12,9 +12,12 @@ const NotFoundPage = () => (
       <Header siteTitle={"EadsGraphic"} />
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
-          <Col>
-            <h1>NOT FOUND</h1>
-            <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+          <Col className="justify-content-center text-center">
+            <h1>404 Error</h1>
+            <p>
+              Page <span className="text-primary">Doesn't</span> exist
+            </p>
+            <Link to="/" className="btn btn-primary">Go Home</Link>
           </Col>
         </Row>
       </Container>

@@ -59,7 +59,7 @@ export default class Header extends React.Component {
 
                 <NavItem>
                   <Link className="nav-link" to="/our-work">
-                    Our Work
+                    Work
                   </Link>
                 </NavItem>
 

@@ -14,7 +14,7 @@ const OurWorkPage = () => (
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>Our Work</h1>
+            <h1>Work</h1>
             <p>
               Clients <span className="text-primary">Love</span> Us
             </p>

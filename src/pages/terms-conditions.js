@@ -14,9 +14,9 @@ const TermsAndConditionsPage = () => (
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>Terms and Conditions</h1>
+            <h1>Terms</h1>
             <p>
-              Two <span className="text-primary">Creative</span> Brothers
+              Conditions<span className="text-primary"> We</span> Follow
             </p>
           </Col>
         </Row>

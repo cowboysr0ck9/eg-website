@@ -15,7 +15,7 @@ const CopyrightPage = () => (
         <Row>
           <Col>
             <h1>Copyright</h1>
-            <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+            <p>Law <span className="text-primary">Abiding</span> Designers</p>
           </Col>
         </Row>
       </Container>

@@ -32,7 +32,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Helmet>
       <link
-        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,400,700"
         rel="stylesheet"
       />
     </Helmet>
@@ -202,9 +202,12 @@ const IndexPage = () => (
           </Col>
 
           <Col xs={12} className="d-flex justify-content-center mt-3 mt-sm-5">
-            <Button outline color="primary">
-              About Us
-            </Button>
+          <Link
+              to="/services"
+              className="btn btn-outline-primary"
+            >
+              More Info
+            </Link>
           </Col>
         </Row>
       </Container>
@@ -225,9 +228,12 @@ const IndexPage = () => (
             </div>
 
             <h1 className="eg-section-title">Designers</h1>
-            <Button className="mt-3" outline color="primary">
+            <Link
+              to="/services#eg-service-graphic-design"
+              className="btn btn-outline-primary"
+            >
               More Info
-            </Button>
+            </Link>
           </Col>
 
           <Col xs={12} sm={6} className="order-0 order-sm-1">
@@ -264,9 +270,12 @@ const IndexPage = () => (
             </div>
 
             <h1 className="eg-section-title">Developers</h1>
-            <Button className="mt-3" outline color="primary">
+            <Link
+              to="/services#eg-service-web-development"
+              className="btn btn-outline-primary"
+            >
               More Info
-            </Button>
+            </Link>
           </Col>
         </Row>
       </Container>
@@ -287,9 +296,12 @@ const IndexPage = () => (
             </div>
 
             <h1 className="eg-section-title">Marketers</h1>
-            <Button className="mt-3" outline color="primary">
+            <Link
+              to="/services#eg-service-digital-marketing"
+              className="btn btn-outline-primary"
+            >
               More Info
-            </Button>
+            </Link>
           </Col>
 
           <Col xs={12} sm={6} className="order-0 order-sm-1">

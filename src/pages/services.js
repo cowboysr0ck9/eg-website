@@ -21,6 +21,11 @@ import Sketch from "../images/service-icons/sketch.png"
 import Snapchat from "../images/service-icons/snapchat.png"
 import WordPress from "../images/service-icons/wordpress.png"
 
+// Section Images
+import WebDevelopmentHero from "../images/service-hero-images/eadsgraphic-web-development.svg"
+import DigitalMarketingHero from "../images/service-hero-images/eadsgraphic-digital-marketing.svg"
+import UIDesignHero from "../images/service-hero-images/eadsgraphic-ui-design.svg"
+
 const ServicesPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -39,13 +44,13 @@ const ServicesPage = () => (
     </section>
 
     {/* Developers Section */}
-    <section className="py-192 bg-light">
+    <section className="py-192 bg-light" id="eg-service-web-development">
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} sm={6} className="order-1 order-sm-0">
             <p className="text-primary mb-0">CUSTOM FULL STACK</p>
-            <h1>Web Development</h1>
-            <p className="mt-3 mt-sm-5 service-paragraph">
+            <h1 className="mb-0">Web Development</h1>
+            <p className="mt-4 service-paragraph">
               The web is here to stay. We’ve been working with robust and
               popular web technologies for just about two decades, and it’s
               something we still love doing today. Whether creating a web
@@ -95,18 +100,33 @@ const ServicesPage = () => (
               Learn More
             </Link>
           </Col>
+
+          <Col xs={12} sm={6} className="order-0 order-sm-1 mb-5 mb-sm-0">
+            <img
+              src={WebDevelopmentHero}
+              className="svg-image"
+              alt="EadsGraphic web development service."
+            />
+          </Col>
         </Row>
       </Container>
     </section>
 
     {/* Marketing Section */}
-    <section className="py-192">
+    <section className="py-192" id="eg-service-digital-marketing">
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} sm={6} className="mb-5 mb-sm-0">
+            <img
+              src={DigitalMarketingHero}
+              className="svg-image"
+              alt="EadsGraphic digital marketing service."
+            />
+          </Col>
+          <Col xs={12} sm={6}>
             <p className="text-primary mb-0">TIME TO GET SOCIAL</p>
-            <h1>Digital Marketing</h1>
-            <p className="mt-3 mt-sm-5 service-paragraph">
+            <h1 className="mb-0">Digital Marketing</h1>
+            <p className="mt-4 service-paragraph">
               The web is here to stay. We’ve been working with robust and
               popular web technologies for just about two decades, and it’s
               something we still love doing today. Whether creating a web
@@ -130,13 +150,13 @@ const ServicesPage = () => (
     </section>
 
     {/* Design Section */}
-    <section className="py-192 bg-light">
+    <section className="py-192 bg-light" id="eg-service-graphic-design">
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} sm={6} className="order-1 order-sm-0">
             <p className="text-primary mb-0">100% PIXEL PERFECT</p>
-            <h1>UI & Graphic Design</h1>
-            <p className="mt-3 mt-sm-5 service-paragraph">
+            <h1 className="mb-0">Creative Design</h1>
+            <p className="mt-4 service-paragraph">
               The web is here to stay. We’ve been working with robust and
               popular web technologies for just about two decades, and it’s
               something we still love doing today. Whether creating a web
@@ -153,6 +173,13 @@ const ServicesPage = () => (
             <Link to="/contact-us" className="btn btn-primary">
               Learn More
             </Link>
+          </Col>
+          <Col xs={12} sm={6} className="order-0 order-sm-1 mb-5 mb-sm-0">
+            <img
+              src={UIDesignHero}
+              className="svg-image"
+              alt="EadsGraphic UI/UX and graphic design services."
+            />
           </Col>
         </Row>
       </Container>

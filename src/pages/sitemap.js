@@ -16,7 +16,7 @@ const SitemapPage = () => (
           <Col>
             <h1>Sitemap</h1>
             <p>
-              Two <span className="text-primary">Creative</span> Brothers
+              Google <span className="text-primary">Follow</span> These
             </p>
           </Col>
         </Row>

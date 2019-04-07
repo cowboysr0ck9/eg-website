@@ -64,16 +64,16 @@ export default class Footer extends React.Component {
               <h4 className="mb-4">About Us</h4>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/">The Story</Link>
+                  <Link to="/about-us">The Story</Link>
                 </li>
                 <li>
-                  <Link to="/">Our Team</Link>
+                  <Link to="/about-us">Our Team</Link>
                 </li>
                 <li>
-                  <Link to="/">Testimonials</Link>
+                  <Link to="/about-us">Testimonials</Link>
                 </li>
                 <li>
-                  <Link to="/">Customer Support</Link>
+                  <Link to="/contact-us">Customer Support</Link>
                 </li>
               </ul>
             </Col>
@@ -82,19 +82,19 @@ export default class Footer extends React.Component {
               <h4 className="mb-4">Services</h4>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/">SEO</Link>
+                  <Link to="/services#eg-service-web-development">SEO</Link>
                 </li>
                 <li>
-                  <Link to="/">UI/UX Design</Link>
+                  <Link to="/services#eg-service-graphic-design">UI/UX Design</Link>
                 </li>
                 <li>
-                  <Link to="/">Graphic Design</Link>
+                  <Link to="/services#eg-service-graphic-design">Graphic Design</Link>
                 </li>
                 <li>
-                  <Link to="/">Digital Marketing</Link>
+                  <Link to="/services#eg-service-digital-marketing">Digital Marketing</Link>
                 </li>
                 <li>
-                  <Link to="/">Web Development</Link>
+                  <Link to="/services#eg-service-web-development">Web Development</Link>
                 </li>
               </ul>
             </Col>
@@ -106,16 +106,16 @@ export default class Footer extends React.Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/">Services</Link>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <Link to="/">About Us</Link>
+                  <Link to="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/">Our Work</Link>
+                  <Link to="/our-work">Our Work</Link>
                 </li>
                 <li>
-                  <Link to="/">Contact Us</Link>
+                  <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </Col>
@@ -124,19 +124,19 @@ export default class Footer extends React.Component {
               <h4 className="mb-4">Resources</h4>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/">F.A.Q</Link>
+                  <Link to="/contact-us#eg-faq-section">F.A.Q</Link>
                 </li>
                 <li>
-                  <Link to="/">Sitemap</Link>
+                  <Link to="/sitemap">Sitemap</Link>
                 </li>
                 <li>
-                  <Link to="/">Copyright</Link>
+                  <Link to="/copyright">Copyright</Link>
                 </li>
                 <li>
-                  <Link to="/">Privacy Policy</Link>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/">Terms and conditions</Link>
+                  <Link to="/terms-conditions">Terms and conditions</Link>
                 </li>
               </ul>
             </Col>
