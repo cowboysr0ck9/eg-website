@@ -36,7 +36,7 @@ const ServicesPage = () => (
           <Col>
             <h1>Services</h1>
             <p>
-              We <span className="text-primary">Transform</span> Ideas
+              We <span className="gradient-text-primary">Transform</span> Ideas
             </p>
           </Col>
         </Row>

@@ -14,7 +14,7 @@ const CopyrightPage = () => (
         <Row>
           <Col>
             <h1>Copyright</h1>
-            <p>Law <span className="text-primary">Abiding</span> Designers</p>
+            <p>Law <span className="gradient-text-primary">Abiding</span> Designers</p>
           </Col>
         </Row>
       </Container>

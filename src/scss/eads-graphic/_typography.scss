@@ -1,14 +1,21 @@
-h1, .h1 {
-    font-weight: 100;
+h1,
+.h1 {
+  font-weight: 100;
 }
 
 #eg-cta-p {
-
-    font-size: 1rem;
-    font-weight: 100;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 .service-paragraph {
-line-height: 28px;
-font-size: .875rem;
+  line-height: 28px;
+  font-size: 0.875rem;
+}
+
+.gradient-text-primary {
+  color: $primary;
+  background: -webkit-linear-gradient(#0acffe, #495aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

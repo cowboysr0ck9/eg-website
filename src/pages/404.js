@@ -15,7 +15,7 @@ const NotFoundPage = () => (
           <Col className="justify-content-center text-center">
             <h1>404 Error</h1>
             <p>
-              Page <span className="text-primary">Doesn't</span> exist
+              Page <span className="gradient-text-primary">Doesn't</span> exist
             </p>
             <Link to="/" className="btn btn-primary">Go Home</Link>
           </Col>

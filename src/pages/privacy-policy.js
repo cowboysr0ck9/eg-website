@@ -15,7 +15,7 @@ const PrivacyPolicyPage = () => (
           <Col>
             <h1>Privacy</h1>
             <p>
-              We<span className="text-primary"> Respect</span> Privacy
+              We<span className="gradient-text-primary"> Respect</span> Privacy
             </p>
           </Col>
         </Row>

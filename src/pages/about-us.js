@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
-import CallToAction from '../components/callToAction'
+import CallToAction from "../components/callToAction"
 
 const AboutUsPage = () => (
   <Layout>
@@ -14,9 +14,10 @@ const AboutUsPage = () => (
       <Container className="d-flex justify-content-center align-items-center full-height">
         <Row>
           <Col>
-            <h1>About</h1>
+            <h1>About Us</h1>
             <p>
-              Two <span className="text-primary">Creative</span> Brothers
+              Two <span className="gradient-text-primary">Creative</span>{" "}
+              Brothers
             </p>
           </Col>
         </Row>
@@ -26,7 +27,7 @@ const AboutUsPage = () => (
       <Container>
         <Row>
           <Col>
-          <Link to="/">Test Link</Link>
+            <Link to="/">Test Link</Link>
           </Col>
         </Row>
       </Container>

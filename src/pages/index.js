@@ -78,8 +78,11 @@ const IndexPage = () => (
             <Link to="/services" className="mt-4 mr-2 btn btn-primary">
               Our Services
             </Link>
-            <Link to="/contact-us" className="mt-4 mr-2 btn btn-link">
-              Free Quote
+            <Link
+              to="/contact-us"
+              className="mt-4 mr-2 btn btn-outline-primary"
+            >
+              Get Quote
             </Link>
 
             <div className="mt-5 d-flex justify-content-between eg-social-hero">
@@ -128,7 +131,7 @@ const IndexPage = () => (
       </Container>
     </section>
     {/* Why Us? Section */}
-    <section className="py-192">
+    <section className="py-192 why-us-section-bg">
       <Container>
         <Row>
           <Col xs={12} className="text-center text-primary">
@@ -143,10 +146,13 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={DevelopersIcon} alt="EadsGraphic developers" />
-            <div className="ml-3">
-              <p className="text-primary mb-3 fw-500">Developers</p>
-              <p>
+            <div className="product-icon">
+              <img src={DevelopersIcon} alt="EadsGraphic developers" />
+            </div>
+
+            <div>
+              <p className="fs-20 mb-1 fw-400">Developers</p>
+              <p className="subtitle">
                 Professional web developers will ensure your idea is fully coded
                 to modern day web standards.
               </p>
@@ -159,10 +165,13 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={DesignersIcon} alt="EadsGraphic designers" />
-            <div className="ml-3">
-              <p className="text-primary mb-3 fw-500">Designers</p>
-              <p>
+            <div className="product-icon">
+              <img src={DesignersIcon} alt="EadsGraphic designers" />
+            </div>
+
+            <div>
+              <p className="fs-20 mb-1 fw-400">Designers</p>
+              <p className="subtitle">
                 Programs such as Sketch and Photoshop ensure we deliver pixel
                 perfect designs to clients.
               </p>
@@ -175,12 +184,15 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img src={MarketersIcon} alt="EadsGraphic marketers" />
-            <div className="ml-3">
-              <p className="text-primary mb-3 fw-500">Marketers</p>
-              <p>
-                Fuel organic web traffic to your website by utilizing our
-                advanced knowledge of SEO tactics.
+            <div className="product-icon">
+              <img src={MarketersIcon} alt="EadsGraphic marketers" />
+            </div>
+
+            <div>
+              <p className="fs-20 mb-1 fw-400">Marketers</p>
+              <p className="subtitle">
+                It's time to fuel organic web traffic to your website by
+                utilizing our advanced knowledge of SEO tactics.
               </p>
             </div>
           </Col>
@@ -191,15 +203,17 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img
-              src={SatisfactionIcon}
-              alt="EadsGraphic customer satisfaction"
-            />
-            <div className="ml-3">
-              <p className="text-primary mb-3 fw-500">Satisfaction</p>
-              <p>
-                Clients complement our detail oriented approach to each and
-                every project we work on.
+            <div className="product-icon">
+              <img
+                src={SatisfactionIcon}
+                alt="EadsGraphic customer satisfaction"
+              />
+            </div>
+            <div>
+              <p className="fs-20 mb-1 fw-400">Satisfaction</p>
+              <p className="subtitle">
+                Clients are always complementing our detail oriented approach to
+                each and every project we work on.
               </p>
             </div>
           </Col>
@@ -210,13 +224,16 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img
-              src={CommunicationIcon}
-              alt="EadsGraphic communication skills"
-            />
-            <div className="ml-3">
-              <p className="text-primary mb-3 fw-500">Communication</p>
-              <p>
+            <div className="product-icon">
+              <img
+                src={CommunicationIcon}
+                alt="EadsGraphic customer satisfaction"
+              />
+            </div>
+
+            <div>
+              <p className="fs-20 mb-1 fw-400">Communication</p>
+              <p className="subtitle">
                 Projects are driven by honest and open communcation between both
                 our team and our cleints.
               </p>
@@ -229,20 +246,22 @@ const IndexPage = () => (
             md={4}
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
-            <img
-              src={CuttingEdgeIcon}
-              alt="EadsGraphic utilizes cutting edge web technology"
-            />
-            <div className="ml-3">
-              <p className="text-primary mb-3 fw-500">Cutting Edge</p>
-              <p>
+            <div className="product-icon">
+              <img
+                src={CuttingEdgeIcon}
+                alt="EadsGraphic utilizes cutting edge web technology"
+              />
+            </div>
+            <div>
+              <p className="fs-20 mb-1 fw-400">Cutting Edge</p>
+              <p className="subtitle">
                 Team members make it a priority to stay up to date with the
                 latest in technology and design.
               </p>
             </div>
           </Col>
 
-          <Col xs={12} className="d-flex justify-content-center mt-3 mt-sm-5">
+          <Col xs={12} className="d-flex justify-content-center mt-5">
             <Link to="/services" className="btn btn-primary">
               More Info
             </Link>

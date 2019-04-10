@@ -15,7 +15,7 @@ const OurWorkPage = () => (
           <Col>
             <h1>Our Work</h1>
             <p>
-              Clients <span className="text-primary">Love</span> Us
+              Clients <span className="gradient-text-primary">Love</span> Us
             </p>
           </Col>
         </Row>

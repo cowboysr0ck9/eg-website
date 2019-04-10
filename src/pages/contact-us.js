@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import ContactForm from "../components/contact-form"
-import CallToAction from '../components/callToAction'
+import CallToAction from "../components/callToAction"
 const ContactUsPage = () => (
   <Layout>
     <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
@@ -15,7 +15,7 @@ const ContactUsPage = () => (
           <Col>
             <h1>Contact</h1>
             <p>
-              Time <span className="text-primary">To</span> Talk
+              Time <span className="gradient-text-primary">To</span> Talk
             </p>
           </Col>
         </Row>

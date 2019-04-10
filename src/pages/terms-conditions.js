@@ -15,7 +15,7 @@ const TermsAndConditionsPage = () => (
           <Col>
             <h1>Terms</h1>
             <p>
-              Conditions<span className="text-primary"> We</span> Follow
+              Conditions<span className="gradient-text-primary"> We</span> Follow
             </p>
           </Col>
         </Row>

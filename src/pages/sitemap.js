@@ -15,7 +15,7 @@ const SitemapPage = () => (
           <Col>
             <h1>Sitemap</h1>
             <p>
-              Google <span className="text-primary">Follow</span> These
+              Google <span className="gradient-text-primary">Follow</span> These
             </p>
           </Col>
         </Row>
