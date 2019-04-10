@@ -44,8 +44,14 @@ const IndexPage = () => (
     </Helmet>
 
     {/* Hero Section */}
-    <section id="eg-hero">
+    <section id="eg-hero" className="position-relative">
       <Header siteTitle={"EadsGraphic"} />
+      <span class="bg-head blue">
+        <span class="bg-head-1" />
+        <span class="bg-head-2">
+          <span class="bg-head-3" />
+        </span>
+      </span>
       <Container className="hero">
         <Row>
           <Col xs={12} sm={8}>
@@ -76,7 +82,7 @@ const IndexPage = () => (
               Free Quote
             </Link>
 
-            <div className="mt-4 d-flex justify-content-between eg-social-hero">
+            <div className="mt-5 d-flex justify-content-between eg-social-hero">
               <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
                 <img
                   src={YoutubeSocial}
@@ -237,7 +243,7 @@ const IndexPage = () => (
           </Col>
 
           <Col xs={12} className="d-flex justify-content-center mt-3 mt-sm-5">
-            <Link to="/services" className="btn btn-outline-primary">
+            <Link to="/services" className="btn btn-primary">
               More Info
             </Link>
           </Col>
@@ -262,7 +268,7 @@ const IndexPage = () => (
             <h1 className="eg-section-title">Designers</h1>
             <Link
               to="/services#eg-service-graphic-design"
-              className="btn btn-outline-primary"
+              className="btn btn-primary"
             >
               More Info
             </Link>
@@ -304,7 +310,7 @@ const IndexPage = () => (
             <h1 className="eg-section-title">Developers</h1>
             <Link
               to="/services#eg-service-web-development"
-              className="btn btn-outline-primary"
+              className="btn btn-primary"
             >
               More Info
             </Link>
@@ -330,7 +336,7 @@ const IndexPage = () => (
             <h1 className="eg-section-title">Marketers</h1>
             <Link
               to="/services#eg-service-digital-marketing"
-              className="btn btn-outline-primary"
+              className="btn btn-primary"
             >
               More Info
             </Link>

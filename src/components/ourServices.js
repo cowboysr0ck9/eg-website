@@ -14,8 +14,29 @@ export default class OurServices extends React.Component {
             <Col xs={12} className="text-center">
               <h1>Skills and Services</h1>
             </Col>
-            <Col className="text-center">
-              <Link to="/our-services" className="btn btn-outline-primary">
+
+            <Col xs={12} sm={4}>
+              <div className="eg-service-block">SEO</div>
+            </Col>
+
+            <Col xs={12} sm={4}>
+              <div className="eg-service-block">UI/UX Design</div>
+            </Col>
+
+            <Col xs={12} sm={4}>
+              <div className="eg-service-block">Graphic Design</div>
+            </Col>
+
+            <Col xs={12} sm={4}>
+              <div className="eg-service-block">Digital Marketing</div>
+            </Col>
+
+            <Col xs={12} sm={4}>
+              <div className="eg-service-block">Web Development</div>
+            </Col>
+
+            <Col xs={12} className="text-center">
+              <Link to="/our-services" className="btn btn-primary">
                 More Info
               </Link>
             </Col>

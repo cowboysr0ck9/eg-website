@@ -9,7 +9,9 @@
   border: 2px solid $primary;
 }
 
-
+.btn-primary {
+  box-shadow: 0 4px 14px 0 rgba(60, 131, 233, .35)
+}
 #eg-main-cta-btn {
   background-color: $white;
   color: $primary;

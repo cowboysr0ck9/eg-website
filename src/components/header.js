@@ -1,13 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import EadsGraphicLogo from "../images/EadsGraphic-main-logo.svg"
-import {
-  Collapse,
-  Navbar,
-  Nav,
-  NavItem,
-  Container,
-} from "reactstrap"
+import { Collapse, Navbar, Nav, NavItem, Container } from "reactstrap"
 import HambugerIcon from "../images/hamburger-menu.svg"
 
 export default class Header extends React.Component {
@@ -25,9 +19,25 @@ export default class Header extends React.Component {
       isOpen: !this.state.isOpen,
     })
   }
+
+  scrollStyle() {
+    const globalHeader = document.getElementById("jsx-header")
+    let scrollY = window.scrollY
+
+    if (scrollY > 50) {
+      globalHeader.classList.add("header-scrolled")
+    } else {
+      globalHeader.classList.remove("header-scrolled")
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.scrollStyle)
+  }
+
   render() {
     return (
-      <header>
+      <header id="jsx-header">
         <Container>
           <Navbar expand="md">
             <Link className="navbar-brand" to="/">
@@ -71,7 +81,7 @@ export default class Header extends React.Component {
                 <NavItem>
                   <Link
                     id="nav-cta-btn"
-                    className="btn btn-primay nav-link"
+                    className="btn btn-primary nav-link"
                     to="/contact-us"
                   >
                     Free Quote
