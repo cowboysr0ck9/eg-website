@@ -5,12 +5,13 @@ import { Row, Col, Container, Card, CardBody } from "reactstrap"
 import JamieErfle from "../images/testimonials/jamie-erfle-eadsgraphic-testimomial.png"
 import MikeCiunci from "../images/testimonials/mike-ciunci-eadsgraphic-testimomial.png"
 import AnthonyGoins from "../images/testimonials/anthony-goins-eadsgraphic-testimomial.png"
+import YaleLacrosse from "../images/testimonials/yale university lacrosse eadsgraphic testimomial copy.png"
 
 export default class ClientTestimonials extends React.Component {
   render() {
     return (
       <section className="bg-light py-96" id="eg-testimonials">
-        <Container>
+        <Container fluid>
           <Row>
             <Col xs={12}>
               <p className="mb-0 text-primary text-center">
@@ -18,7 +19,7 @@ export default class ClientTestimonials extends React.Component {
               </p>
               <h1 className="text-center">Client Testimonials</h1>
             </Col>
-            <Col xs={12} sm={4} className="mt-5 text-center">
+            <Col xs={12} sm={3} className="mt-5 text-center">
               <img
                 className="eg-testimonial-avatar"
                 src={JamieErfle}
@@ -40,7 +41,7 @@ export default class ClientTestimonials extends React.Component {
               </Card>
             </Col>
 
-            <Col xs={12} sm={4} className="mt-5 text-center">
+            <Col xs={12} sm={3} className="mt-5 text-center">
               <img
                 className="eg-testimonial-avatar"
                 src={AnthonyGoins}
@@ -64,7 +65,7 @@ export default class ClientTestimonials extends React.Component {
               </Card>
             </Col>
 
-            <Col xs={12} sm={4} className="mt-5 text-center">
+            <Col xs={12} sm={3} className="mt-5 text-center">
               <img
                 className="eg-testimonial-avatar"
                 src={MikeCiunci}
@@ -82,6 +83,29 @@ export default class ClientTestimonials extends React.Component {
                     always goes out of his way to offer a quality product in a
                     very timely fashion. He is responsive, talented and an
                     absolute pleasure to work with!
+                  </p>
+                </CardBody>
+              </Card>
+            </Col>
+
+            <Col xs={12} sm={3} className="mt-5 text-center">
+              <img
+                className="eg-testimonial-avatar"
+                src={YaleLacrosse}
+                alt="Andrew Baxter's client testimonial"
+              />
+              <Card className="eg-testimonial">
+                <CardBody>
+                  <h6 className="text-center">Andrew Baxter</h6>
+                  <p className="text-center eg-sub-title">
+                    Yale University Lacrosse | Associate Head Coach
+                  </p>
+                  <p>
+                    EadsGraphic has provided an incredible boost to our camps
+                    and marketing with a unique and eye catching style. We have
+                    used them for anything from camp flyers to team schedule
+                    posters and have always been impressed and excited about the
+                    product Tyler has created for us.
                   </p>
                 </CardBody>
               </Card>

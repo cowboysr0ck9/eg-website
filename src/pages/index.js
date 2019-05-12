@@ -46,10 +46,10 @@ const IndexPage = () => (
     {/* Hero Section */}
     <section id="eg-hero" className="position-relative">
       <Header siteTitle={"EadsGraphic"} />
-      <span class="bg-head blue">
-        <span class="bg-head-1" />
-        <span class="bg-head-2">
-          <span class="bg-head-3" />
+      <span className="bg-head blue">
+        <span className="bg-head-1" />
+        <span className="bg-head-2">
+          <span className="bg-head-3" />
         </span>
       </span>
       <Container className="hero">
@@ -235,7 +235,7 @@ const IndexPage = () => (
               <p className="fs-20 mb-1 fw-400">Communication</p>
               <p className="subtitle">
                 Projects are driven by honest and open communcation between both
-                our team and our cleints.
+                our team and our clients.
               </p>
             </div>
           </Col>
@@ -270,13 +270,47 @@ const IndexPage = () => (
       </Container>
     </section>
 
+    {/* Developers */}
+    <section className="py-192 bg-light">
+      <Container>
+        <Row>
+          <Col xs={12} sm={6}>
+            <img
+              src={DeveloperSection}
+              className="svg-responsive"
+              alt="Eadsgraphic web development"
+            />
+          </Col>
+
+          <Col xs={12} sm={6} className="mt-5 mt-sm-0">
+            <div className="d-flex justify-content-start">
+              <div className="eg-section-square">01</div>
+              <p className="ml-3 eg-section-lead">
+                Our ability to design and develop clients ideas is apart of what
+                speertes us from other creative development agencies in the
+                greater Philadelphia area.
+              </p>
+            </div>
+
+            <h1 className="eg-section-title">Developers</h1>
+            <Link
+              to="/services#eg-service-web-development"
+              className="btn btn-primary"
+            >
+              More Info
+            </Link>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+
     {/* Designers */}
     <section className="py-192">
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">
             <div className="d-flex justify-content-start">
-              <div className="eg-section-square">01</div>
+              <div className="eg-section-square">02</div>
               <p className="ml-3 eg-section-lead">
                 Our ability to design and develop clients ideas is apart of what
                 speertes us from other creative development agencies in the
@@ -304,42 +338,8 @@ const IndexPage = () => (
       </Container>
     </section>
 
-    {/* Developers */}
-    <section className="py-192 bg-light">
-      <Container>
-        <Row>
-          <Col xs={12} sm={6}>
-            <img
-              src={DeveloperSection}
-              className="svg-responsive"
-              alt="Eadsgraphic web development"
-            />
-          </Col>
-
-          <Col xs={12} sm={6} className="mt-5 mt-sm-0">
-            <div className="d-flex justify-content-start">
-              <div className="eg-section-square">02</div>
-              <p className="ml-3 eg-section-lead">
-                Our ability to design and develop clients ideas is apart of what
-                speertes us from other creative development agencies in the
-                greater Philadelphia area.
-              </p>
-            </div>
-
-            <h1 className="eg-section-title">Developers</h1>
-            <Link
-              to="/services#eg-service-web-development"
-              className="btn btn-primary"
-            >
-              More Info
-            </Link>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-
     {/* Marketers */}
-    <section className="py-192">
+    <section className="py-192 bg-light">
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">

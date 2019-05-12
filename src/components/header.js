@@ -23,7 +23,6 @@ export default class Header extends React.Component {
   scrollStyle() {
     const globalHeader = document.getElementById("jsx-header")
     let scrollY = window.scrollY
-
     if (scrollY > 50) {
       globalHeader.classList.add("header-scrolled")
     } else {
