@@ -44,7 +44,7 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <section className="py-96 bg-light">
+      <section className="py-96">
         <Container>
           <Row>
             <Col className="col-12 mx-auto">

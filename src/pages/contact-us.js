@@ -21,10 +21,18 @@ const ContactUsPage = () => (
         </Row>
       </Container>
     </section>
-
-    <section className="py-96 bg-light" id="eg-faq-section">
-      <p className="text-center text-primary">FREQUENTLY ASKED QUESTIONS</p>
-      <h1 className="text-center">What can we answer for you?</h1>
+    <section>
+      <Container>
+        <Row>
+          <Col xs={12} sm={6}>
+            <h6>Contact Info</h6>
+            <address>EadsGraphic Philadelphia, PA</address>
+          </Col>
+          <Col xs={12} sm={6}>
+            <h6>Contact Info</h6>
+          </Col>
+        </Row>
+      </Container>
     </section>
 
     <ContactForm />

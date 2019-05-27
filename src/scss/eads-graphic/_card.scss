@@ -40,19 +40,24 @@
 }
 
 .eg-service-block {
-  width: 325px;
-  min-height: 152px;
   border-radius: 10px;
-  box-shadow: 0 2.5px 7px 0 #c7ced5;
   background-color: #fff;
-  padding: 35px;
+  padding-left: 36px;
+  padding-right: 36px;
   box-sizing: border-box;
-  margin: 11px;
   display: block;
   text-decoration: none;
   position: relative;
   top: 0;
   transition: box-shadow 0.3s, top 0.3s;
+}
+
+.single-service-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 .product-icon {

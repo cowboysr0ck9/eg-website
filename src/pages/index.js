@@ -18,9 +18,9 @@ import SatisfactionIcon from "../images/why-us-icons/eads-graphic-satisfaction-i
 import CommunicationIcon from "../images/why-us-icons/eads-graphic-communication-icon.svg"
 import CuttingEdgeIcon from "../images/why-us-icons/eads-graphic-cutting-edge-icon.svg"
 
-import DesignerSection from "../images/section-hero-images/eadsgraphic-designer-section.svg"
-import DeveloperSection from "../images/section-hero-images/eadsgraphic-developers-section.svg"
-import MarketerSection from "../images/section-hero-images/eadsgraphic-marketers-section.svg"
+import DesignerSection from "../images/landing-page/creativity.svg"
+import DeveloperSection from "../images/landing-page/web-development.svg"
+import MarketerSection from "../images/landing-page/digital-marketing.svg"
 
 // Social Icons
 import BehanceSocial from "../images/social-icons/behance.svg"
@@ -28,6 +28,9 @@ import YoutubeSocial from "../images/social-icons/youtube.svg"
 import InstagramSocial from "../images/social-icons/instagram.svg"
 import DribbbleSocial from "../images/social-icons/dribbble.svg"
 import GithubSocial from "../images/social-icons/github.svg"
+
+// Sets Default Icon Size
+const iconSize = 30
 
 const IndexPage = () => (
   <Layout>
@@ -131,7 +134,7 @@ const IndexPage = () => (
       </Container>
     </section>
     {/* Why Us? Section */}
-    <section className="py-192 why-us-section-bg">
+    <section className="py-96 why-us-section-bg">
       <Container>
         <Row>
           <Col xs={12} className="text-center text-primary">
@@ -147,10 +150,15 @@ const IndexPage = () => (
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
             <div className="product-icon">
-              <img src={DevelopersIcon} alt="EadsGraphic developers" />
+              <img
+                src={DevelopersIcon}
+                height={iconSize}
+                alt="EadsGraphic developers"
+              />
             </div>
 
             <div>
+              <span class="title-accent" />
               <p className="fs-20 mb-1 fw-400">Developers</p>
               <p className="subtitle">
                 Professional web developers will ensure your idea is fully coded
@@ -166,10 +174,15 @@ const IndexPage = () => (
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
             <div className="product-icon">
-              <img src={DesignersIcon} alt="EadsGraphic designers" />
+              <img
+                src={DesignersIcon}
+                alt="EadsGraphic designers"
+                height={iconSize}
+              />
             </div>
 
             <div>
+              <span class="title-accent" />
               <p className="fs-20 mb-1 fw-400">Designers</p>
               <p className="subtitle">
                 Programs such as Sketch and Photoshop ensure we deliver pixel
@@ -185,10 +198,15 @@ const IndexPage = () => (
             className="d-flex align-items-start mt-3 mt-sm-5"
           >
             <div className="product-icon">
-              <img src={MarketersIcon} alt="EadsGraphic marketers" />
+              <img
+                src={MarketersIcon}
+                alt="EadsGraphic marketers"
+                height={iconSize}
+              />
             </div>
 
             <div>
+              <span class="title-accent" />
               <p className="fs-20 mb-1 fw-400">Marketers</p>
               <p className="subtitle">
                 It's time to fuel organic web traffic to your website by
@@ -207,9 +225,11 @@ const IndexPage = () => (
               <img
                 src={SatisfactionIcon}
                 alt="EadsGraphic customer satisfaction"
+                height={iconSize}
               />
             </div>
             <div>
+              <span class="title-accent" />
               <p className="fs-20 mb-1 fw-400">Satisfaction</p>
               <p className="subtitle">
                 Clients are always complementing our detail oriented approach to
@@ -228,10 +248,12 @@ const IndexPage = () => (
               <img
                 src={CommunicationIcon}
                 alt="EadsGraphic customer satisfaction"
+                height={iconSize}
               />
             </div>
 
             <div>
+              <span class="title-accent" />
               <p className="fs-20 mb-1 fw-400">Communication</p>
               <p className="subtitle">
                 Projects are driven by honest and open communcation between both
@@ -250,9 +272,11 @@ const IndexPage = () => (
               <img
                 src={CuttingEdgeIcon}
                 alt="EadsGraphic utilizes cutting edge web technology"
+                height={iconSize}
               />
             </div>
             <div>
+              <span class="title-accent" />
               <p className="fs-20 mb-1 fw-400">Cutting Edge</p>
               <p className="subtitle">
                 Team members make it a priority to stay up to date with the
@@ -271,10 +295,10 @@ const IndexPage = () => (
     </section>
 
     {/* Developers */}
-    <section className="py-192 bg-light">
+    <section className="py-96 eg-section-accent__top">
       <Container>
-        <Row>
-          <Col xs={12} sm={6}>
+        <Row className="justify-content-center">
+          <Col xs={12} sm={4} className="mr-sm-5">
             <img
               src={DeveloperSection}
               className="svg-responsive"
@@ -282,7 +306,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs={12} sm={6} className="mt-5 mt-sm-0">
+          <Col xs={12} sm={4} className="mt-5 mt-sm-0 ">
             <div className="d-flex justify-content-start">
               <div className="eg-section-square">01</div>
               <p className="ml-3 eg-section-lead">
@@ -292,7 +316,7 @@ const IndexPage = () => (
               </p>
             </div>
 
-            <h1 className="eg-section-title">Developers</h1>
+            <h1 className="eg-section-title mb-3">Developers</h1>
             <Link
               to="/services#eg-service-web-development"
               className="btn btn-primary"
@@ -305,10 +329,14 @@ const IndexPage = () => (
     </section>
 
     {/* Designers */}
-    <section className="py-192">
+    <section className="py-96 eg-section-accent__bottom">
       <Container>
-        <Row>
-          <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">
+        <Row className="justify-content-center">
+          <Col
+            xs={12}
+            sm={4}
+            className="order-1 order-sm-0 mt-5 mt-sm-0 mr-sm-5"
+          >
             <div className="d-flex justify-content-start">
               <div className="eg-section-square">02</div>
               <p className="ml-3 eg-section-lead">
@@ -318,7 +346,7 @@ const IndexPage = () => (
               </p>
             </div>
 
-            <h1 className="eg-section-title">Designers</h1>
+            <h1 className="eg-section-title mb-3">Designers</h1>
             <Link
               to="/services#eg-service-graphic-design"
               className="btn btn-primary"
@@ -327,7 +355,7 @@ const IndexPage = () => (
             </Link>
           </Col>
 
-          <Col xs={12} sm={6} className="order-0 order-sm-1">
+          <Col xs={12} sm={4} className="order-0 order-sm-1">
             <img
               src={DesignerSection}
               className="svg-responsive"
@@ -339,10 +367,17 @@ const IndexPage = () => (
     </section>
 
     {/* Marketers */}
-    <section className="py-192 bg-light">
+    <section className="py-96 eg-section-accent__top">
       <Container>
-        <Row>
-          <Col xs={12} sm={6} className="order-1 order-sm-0 mt-5 mt-sm-0">
+        <Row className="justify-content-center">
+          <Col xs={12} sm={4} className=" mr-sm-5">
+            <img
+              src={MarketerSection}
+              className="svg-responsive"
+              alt="Eadsgraphic digital marketing"
+            />
+          </Col>
+          <Col xs={12} sm={4} className="mt-5 mt-sm-0 ">
             <div className="d-flex justify-content-start ">
               <div className="eg-section-square">03</div>
               <p className="ml-3 eg-section-lead">
@@ -352,21 +387,13 @@ const IndexPage = () => (
               </p>
             </div>
 
-            <h1 className="eg-section-title">Marketers</h1>
+            <h1 className="eg-section-title mb-3">Marketers</h1>
             <Link
               to="/services#eg-service-digital-marketing"
               className="btn btn-primary"
             >
               More Info
             </Link>
-          </Col>
-
-          <Col xs={12} sm={6} className="order-0 order-sm-1">
-            <img
-              src={MarketerSection}
-              className="svg-responsive"
-              alt="Eadsgraphic digital marketing"
-            />
           </Col>
         </Row>
       </Container>

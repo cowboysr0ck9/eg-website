@@ -1,42 +1,36 @@
 import React from "react"
 import { Row, Col, Container } from "reactstrap"
 import { Link } from "gatsby"
-
+import IndividiualService from "./individiualService"
+import ServicesData from "../data/ServicesData"
 export default class OurServices extends React.Component {
   render() {
     return (
-      <section className="py-192 " id="eg-our-services">
+      <section className="py-96" id="eg-our-services">
         <Container>
-          <Row>
+          <Row className="justify-content-center">
             <Col xs={12} className="text-center text-primary">
               AREAS OF INTEREST
             </Col>
             <Col xs={12} className="text-center">
-              <h1>Skills and Services</h1>
+              <h1 className="mb-5">Skills and Services</h1>
             </Col>
 
-            <Col xs={12} sm={4}>
-              <div className="eg-service-block">SEO</div>
-            </Col>
-
-            <Col xs={12} sm={4}>
-              <div className="eg-service-block">UI/UX Design</div>
-            </Col>
-
-            <Col xs={12} sm={4}>
-              <div className="eg-service-block">Graphic Design</div>
-            </Col>
-
-            <Col xs={12} sm={4}>
-              <div className="eg-service-block">Digital Marketing</div>
-            </Col>
-
-            <Col xs={12} sm={4}>
-              <div className="eg-service-block">Web Development</div>
-            </Col>
+            {ServicesData.map(x => {
+              return (
+                <IndividiualService
+                  key={x.id}
+                  title={x.title}
+                  description={x.description}
+                  link={x.link}
+                  linkText={x.linkText}
+                  bgColor={x.bgColor}
+                />
+              )
+            })}
 
             <Col xs={12} className="text-center">
-              <Link to="/our-services" className="btn btn-primary">
+              <Link to="/services" className="mt-3 btn btn-primary">
                 More Info
               </Link>
             </Col>

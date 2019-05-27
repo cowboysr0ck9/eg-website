@@ -30,9 +30,7 @@
 .eg-section-title {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700;
   color: $primary;
-  line-height: 1;
 }
 
 // Client Testiomonials
@@ -41,4 +39,18 @@
   background-image: url("../images/quote-icon.png");
   background-repeat: no-repeat;
   background-position: top 2% center;
+}
+
+.eg-section-accent__top {
+  background-size: 148px;
+  background-repeat: no-repeat;
+  background-image: url("../images/section-accent.svg");
+  background-position: top 4% left 8%;
+}
+
+.eg-section-accent__bottom {
+  background-size: 148px;
+  background-repeat: no-repeat;
+  background-image: url("../images/section-accent.svg");
+  background-position: bottom 0% right 8%;
 }
