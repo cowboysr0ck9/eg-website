@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import EadsGraphicLogo from "../images/EadsGraphic-main-logo.svg"
+import EadsGraphicLogoWhite from "../images/EadsGraphic-main-logo-white.svg"
 import { Collapse, Navbar, Nav, NavItem, Container } from "reactstrap"
 import HambugerIcon from "../images/hamburger-menu.svg"
 
@@ -21,12 +22,27 @@ export default class Header extends React.Component {
   }
 
   scrollStyle() {
-    const globalHeader = document.getElementById("jsx-header")
+    const globalHeader = document.getElementById("eg-header")
+    const egLogo = document.getElementById("egLogo")
+    const jsLinks = document.getElementsByClassName("jsLink")
+    const linkCount = jsLinks.length
     let scrollY = window.scrollY
+
+    let i = 0
     if (scrollY > 50) {
       globalHeader.classList.add("header-scrolled")
+      egLogo.setAttribute("src", EadsGraphicLogo)
+
+      for (i; i < linkCount; i++) {
+        jsLinks[i].style.color = "#1F2025"
+      }
     } else {
       globalHeader.classList.remove("header-scrolled")
+      egLogo.setAttribute("src", EadsGraphicLogoWhite)
+
+      for (i; i < linkCount; i++) {
+        jsLinks[i].style.color = "white"
+      }
     }
   }
 
@@ -36,11 +52,15 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <header id="jsx-header">
+      <header id="eg-header">
         <Container>
           <Navbar expand="md">
             <Link className="navbar-brand" to="/">
-              <img src={EadsGraphicLogo} alt="EadsGraphic Official Logo" />
+              <img
+                src={EadsGraphicLogoWhite}
+                alt="EadsGraphic Official Logo"
+                id="egLogo"
+              />
             </Link>
 
             <img
@@ -54,25 +74,25 @@ export default class Header extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto align-items-center" navbar>
                 <NavItem>
-                  <Link className="nav-link" to="/about-us">
+                  <Link className="nav-link jsLink" to="/about-us">
                     About
                   </Link>
                 </NavItem>
 
                 <NavItem>
-                  <Link className="nav-link" to="/services">
+                  <Link className="nav-link jsLink" to="/services">
                     Services
                   </Link>
                 </NavItem>
 
                 <NavItem>
-                  <Link className="nav-link" to="/our-work">
+                  <Link className="nav-link jsLink" to="/our-work">
                     Work
                   </Link>
                 </NavItem>
 
                 <NavItem>
-                  <Link className="nav-link" to="/contact-us">
+                  <Link className="nav-link jsLink" to="/contact-us">
                     Contact
                   </Link>
                 </NavItem>

@@ -2,7 +2,7 @@
   font-size: 58px;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -.15rem;
+  letter-spacing: -0.15rem;
 }
 
 #eg-hero p {
@@ -38,21 +38,18 @@
   }
 }
 
-
 .svg-image {
   width: 100%;
   height: auto;
 }
 
-
-// EG Social Heor Icons
+// EG Social Hero Icons
 .eg-social-hero a {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .eg-social-hero a:hover {
   transform: scale(1.5);
 }
-
 
 // Custom
 .bg-head {
@@ -84,8 +81,8 @@
 
 .bg-head.blue .bg-head-2 {
   background: #5ad4f6;
-  background: linear-gradient(-45deg,$white, #dfe3e8);
-  box-shadow: 0 0 16px 0 rgba(30, 31, 36, .15);
+  background: linear-gradient(-45deg, $white, #dfe3e8);
+  box-shadow: 0 0 16px 0 rgba(30, 31, 36, 0.15);
 }
 
 .bg-head .bg-head-2 {
@@ -104,4 +101,14 @@
   left: 0;
   top: 0;
   margin-top: -7%;
+}
+
+.hero-section {
+  background-image: url("../images/homepage-banner-bg.svg");
+  position: relative;
+  padding-bottom: 200px;
+  min-height: 150px;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

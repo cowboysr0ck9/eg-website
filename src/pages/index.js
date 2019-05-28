@@ -47,20 +47,14 @@ const IndexPage = () => (
     </Helmet>
 
     {/* Hero Section */}
-    <section id="eg-hero" className="position-relative">
+    <section id="eg-hero" className="hero-section position-relative">
       <Header siteTitle={"EadsGraphic"} />
-      <span className="bg-head blue">
-        <span className="bg-head-1" />
-        <span className="bg-head-2">
-          <span className="bg-head-3" />
-        </span>
-      </span>
       <Container className="hero">
         <Row>
           <Col xs={12} sm={8}>
-            <p className="h4 text-primary">Hello, World</p>
-            <h1>We are,</h1>
-            <h1>
+            <p className="h4 text-white">Hello, World</p>
+            <h1 className="text-white">We are,</h1>
+            <h1 className="text-white">
               <Typed
                 strings={[
                   " EadsGraphic",
@@ -73,22 +67,19 @@ const IndexPage = () => (
                 typeSpeed={60}
               />
             </h1>
-            <p className="mb-0">
+            <p className="mb-0 text-white">
               EadsGraphic is a creative technology agency operating in the
               greater Philadelphia area.
             </p>
 
-            <Link to="/services" className="mt-4 mr-2 btn btn-primary">
+            <Link to="/services" className="mt-4 mr-3 btn btn-light text-dark">
               Our Services
             </Link>
-            <Link
-              to="/contact-us"
-              className="mt-4 mr-2 btn btn-outline-primary"
-            >
+            <Link to="/contact-us" className="mt-4 btn btn-outline-light">
               Get Quote
             </Link>
 
-            <div className="mt-5 d-flex justify-content-between eg-social-hero">
+            <div className="mt-5 d-flex justify-content-between">
               <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
                 <img
                   src={YoutubeSocial}

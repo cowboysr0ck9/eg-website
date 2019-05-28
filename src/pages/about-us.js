@@ -23,6 +23,14 @@ const AboutUsPage = () => (
         </Row>
       </Container>
     </section>
+
+    <section>
+      <p>
+        We believe that people are the key to success and we feel proud every
+        time when someone new is joining
+      </p>
+    </section>
+
     <section>
       <Container>
         <Row>

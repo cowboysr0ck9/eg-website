@@ -13,7 +13,7 @@ import GithubSocial from "../images/social-icons/github.svg"
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer className="py-96">
+      <footer className="py-96 map-background">
         <Container>
           <Row>
             <Col xs={12} sm={4} className="mb-5 mb-sm-0">
@@ -21,31 +21,51 @@ export default class Footer extends React.Component {
               <div class="d-flex mt-4">
                 <div className="eg-social-btn mr-3">
                   <a href="https://www.behance.net/tylereads">
-                    <img src={BehanceSocial} width={32} alt="Follow EadsGraphic on Behance"/>
+                    <img
+                      src={BehanceSocial}
+                      width={32}
+                      alt="Follow EadsGraphic on Behance"
+                    />
                   </a>
                 </div>
 
                 <div className="eg-social-btn mr-3">
                   <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
-                    <img src={YoutubeSocial} width={32} alt="Follow EadsGraphic on YouTube" />
+                    <img
+                      src={YoutubeSocial}
+                      width={32}
+                      alt="Follow EadsGraphic on YouTube"
+                    />
                   </a>
                 </div>
 
                 <div className="eg-social-btn mr-3">
                   <a href="https://www.instagram.com/eadsgraphic/?hl=en">
-                    <img src={InstagramSocial} height={28} alt="Follow EadsGraphic on Instagram"/>
+                    <img
+                      src={InstagramSocial}
+                      height={28}
+                      alt="Follow EadsGraphic on Instagram"
+                    />
                   </a>
                 </div>
 
                 <div className="eg-social-btn mr-3">
                   <a href="https://dribbble.com/eadsgraphic">
-                    <img src={DribbbleSocial} height={28} alt="Follow EadsGraphic on Dribbble" />
+                    <img
+                      src={DribbbleSocial}
+                      height={28}
+                      alt="Follow EadsGraphic on Dribbble"
+                    />
                   </a>
                 </div>
 
                 <div className="eg-social-btn">
                   <a href="https://github.com/EadsGraphic">
-                    <img src={GithubSocial} height={28} alt="Follow EadsGraphic on GitHub"/>
+                    <img
+                      src={GithubSocial}
+                      height={28}
+                      alt="Follow EadsGraphic on GitHub"
+                    />
                   </a>
                 </div>
               </div>
