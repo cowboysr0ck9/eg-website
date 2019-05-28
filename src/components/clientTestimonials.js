@@ -1,14 +1,84 @@
 import React from "react"
-import { Row, Col, Container, Card, CardBody } from "reactstrap"
+import {
+  Row,
+  Col,
+  Container,
+  Card,
+  CardBody,
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
+} from "reactstrap"
 
-// Testimonial Avatar Images
-import JamieErfle from "../images/testimonials/jamie-erfle-eadsgraphic-testimomial.png"
-import MikeCiunci from "../images/testimonials/mike-ciunci-eadsgraphic-testimomial.png"
-import AnthonyGoins from "../images/testimonials/anthony-goins-eadsgraphic-testimomial.png"
-import YaleLacrosse from "../images/testimonials/yale university lacrosse eadsgraphic testimomial copy.png"
+import Testimonials from "../data/Testimonials"
 
 export default class ClientTestimonials extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { activeIndex: 0 }
+    this.next = this.next.bind(this)
+    this.previous = this.previous.bind(this)
+    this.goToIndex = this.goToIndex.bind(this)
+    this.onExiting = this.onExiting.bind(this)
+    this.onExited = this.onExited.bind(this)
+  }
+
+  onExiting() {
+    this.animating = true
+  }
+
+  onExited() {
+    this.animating = false
+  }
+
+  next() {
+    if (this.animating) return
+    const nextIndex =
+      this.state.activeIndex === Testimonials.length - 1
+        ? 0
+        : this.state.activeIndex + 1
+    this.setState({ activeIndex: nextIndex })
+  }
+
+  previous() {
+    if (this.animating) return
+    const nextIndex =
+      this.state.activeIndex === 0
+        ? Testimonials.length - 1
+        : this.state.activeIndex - 1
+    this.setState({ activeIndex: nextIndex })
+  }
+
+  goToIndex(newIndex) {
+    if (this.animating) return
+    this.setState({ activeIndex: newIndex })
+  }
+
   render() {
+    const { activeIndex } = this.state
+
+    const slides = Testimonials.map(x => {
+      return (
+        <CarouselItem
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={x.id}
+        >
+          <img src={x.avatar} alt={x.name} className="eg-testimonial-avatar" />
+          <Card className="eg-testimonial">
+            <CardBody>
+              <h6 className="text-center fs-20">{x.name}</h6>
+              <p className="text-center eg-sub-title">{x.company}</p>
+              <p className="eg-testimonial-p">{x.description}</p>
+            </CardBody>
+          </Card>
+
+          <CarouselCaption />
+        </CarouselItem>
+      )
+    })
     return (
       <section className="bg-light py-96" id="eg-testimonials">
         <Container fluid>
@@ -19,13 +89,37 @@ export default class ClientTestimonials extends React.Component {
               </p>
               <h1 className="text-center">Client Testimonials</h1>
             </Col>
-            <Col xs={12} sm={3} className="mt-5 text-center">
-              <img
+            <Col xs={12}>
+              <Carousel
+                activeIndex={activeIndex}
+                next={this.next}
+                previous={this.previous}
+              >
+                <CarouselIndicators
+                  items={Testimonials}
+                  activeIndex={activeIndex}
+                  onClickHandler={this.goToIndex}
+                />
+                {slides}
+                <CarouselControl
+                  direction="prev"
+                  directionText="Previous"
+                  onClickHandler={this.previous}
+                />
+                <CarouselControl
+                  direction="next"
+                  directionText="Next"
+                  onClickHandler={this.next}
+                />
+              </Carousel>
+            </Col>
+
+            {/* <img
                 className="eg-testimonial-avatar"
                 src={JamieErfle}
                 alt="Jamie Erfle's client testimonial"
-              />
-              <Card className="eg-testimonial">
+              /> */}
+            {/* <Card className="eg-testimonial">
                 <CardBody>
                   <h6 className="text-center">Jamie Gressen Erfle</h6>
                   <p className="text-center eg-sub-title">
@@ -38,78 +132,7 @@ export default class ClientTestimonials extends React.Component {
                     quickly.
                   </p>
                 </CardBody>
-              </Card>
-            </Col>
-
-            <Col xs={12} sm={3} className="mt-5 text-center">
-              <img
-                className="eg-testimonial-avatar"
-                src={AnthonyGoins}
-                alt="Anthony Goins's client testimonial"
-              />
-              <Card className="eg-testimonial">
-                <CardBody>
-                  <h6 className="text-center">Anthony Goins</h6>
-                  <p className="text-center eg-sub-title">
-                    Quinnipiac University Men's Basketball
-                  </p>
-                  <p>
-                    EadsGraphic is one of the best-kept secrets in the graphic
-                    design world. They are professional, extremely creative, and
-                    make sure they meet the client's needs. I have used their
-                    services for a variety of projects and without fail,
-                    everyone asks “Who did the design work?” If you are looking
-                    for ANY type of design work, EadsGraphic is the place to go!
-                  </p>
-                </CardBody>
-              </Card>
-            </Col>
-
-            <Col xs={12} sm={3} className="mt-5 text-center">
-              <img
-                className="eg-testimonial-avatar"
-                src={MikeCiunci}
-                alt="Mike Ciunci's client testimonial"
-              />
-              <Card className="eg-testimonial">
-                <CardBody>
-                  <h6 className="text-center">Amy Vinciguerro & Mike Ciunci</h6>
-                  <p className="text-center eg-sub-title">
-                    Mike Ciunci | Keller Williams Realty
-                  </p>
-                  <p>
-                    Tyler is absolutely fantastic to work with. We work with him
-                    for video editing, website, and social media design, and he
-                    always goes out of his way to offer a quality product in a
-                    very timely fashion. He is responsive, talented and an
-                    absolute pleasure to work with!
-                  </p>
-                </CardBody>
-              </Card>
-            </Col>
-
-            <Col xs={12} sm={3} className="mt-5 text-center">
-              <img
-                className="eg-testimonial-avatar"
-                src={YaleLacrosse}
-                alt="Andrew Baxter's client testimonial"
-              />
-              <Card className="eg-testimonial">
-                <CardBody>
-                  <h6 className="text-center">Andrew Baxter</h6>
-                  <p className="text-center eg-sub-title">
-                    Yale University Lacrosse | Associate Head Coach
-                  </p>
-                  <p>
-                    EadsGraphic has provided an incredible boost to our camps
-                    and marketing with a unique and eye catching style. We have
-                    used them for anything from camp flyers to team schedule
-                    posters and have always been impressed and excited about the
-                    product Tyler has created for us.
-                  </p>
-                </CardBody>
-              </Card>
-            </Col>
+              </Card> */}
           </Row>
         </Container>
       </section>

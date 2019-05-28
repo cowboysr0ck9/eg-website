@@ -28,16 +28,6 @@
   width: 10rem;
 }
 
-// Mobile Only
-@media (max-width: 767.98px) {
-  .eg-social-hero {
-    position: absolute;
-    bottom: -96px;
-    left: calc(50% - 177px);
-    width: 85%;
-  }
-}
-
 .svg-image {
   width: 100%;
   height: auto;

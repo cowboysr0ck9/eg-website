@@ -21,7 +21,7 @@ export default class Footer extends React.Component {
               <div class="d-flex mt-4">
                 <div className="eg-social-btn mr-3">
                   <a href="https://www.behance.net/tylereads">
-                    <img
+                    <svg
                       src={BehanceSocial}
                       width={32}
                       alt="Follow EadsGraphic on Behance"
@@ -31,7 +31,7 @@ export default class Footer extends React.Component {
 
                 <div className="eg-social-btn mr-3">
                   <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
-                    <img
+                    <svg
                       src={YoutubeSocial}
                       width={32}
                       alt="Follow EadsGraphic on YouTube"
@@ -41,7 +41,7 @@ export default class Footer extends React.Component {
 
                 <div className="eg-social-btn mr-3">
                   <a href="https://www.instagram.com/eadsgraphic/?hl=en">
-                    <img
+                    <svg
                       src={InstagramSocial}
                       height={28}
                       alt="Follow EadsGraphic on Instagram"
@@ -51,7 +51,7 @@ export default class Footer extends React.Component {
 
                 <div className="eg-social-btn mr-3">
                   <a href="https://dribbble.com/eadsgraphic">
-                    <img
+                    <svg
                       src={DribbbleSocial}
                       height={28}
                       alt="Follow EadsGraphic on Dribbble"
@@ -61,7 +61,7 @@ export default class Footer extends React.Component {
 
                 <div className="eg-social-btn">
                   <a href="https://github.com/EadsGraphic">
-                    <img
+                    <svg
                       src={GithubSocial}
                       height={28}
                       alt="Follow EadsGraphic on GitHub"

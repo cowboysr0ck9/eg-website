@@ -79,7 +79,7 @@ const IndexPage = () => (
               Get Quote
             </Link>
 
-            <div className="mt-5 d-flex justify-content-between">
+            <div className="mt-5 d-flex justify-content-between eg-social-hero">
               <a href="https://www.youtube.com/channel/UCzSqOX4lcdU9R-s6qjKQWqQ/featured">
                 <img
                   src={YoutubeSocial}
@@ -95,7 +95,6 @@ const IndexPage = () => (
                   alt="Follow EadsGraphic on BeHance"
                 />
               </a>
-
               <a href="https://www.instagram.com/eadsgraphic/?hl=en">
                 <img
                   src={InstagramSocial}
@@ -103,7 +102,6 @@ const IndexPage = () => (
                   alt="Follow EadsGraphic on Instagram"
                 />
               </a>
-
               <a href="https://dribbble.com/eadsgraphic">
                 <img
                   src={DribbbleSocial}
