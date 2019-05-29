@@ -3,14 +3,14 @@ const dtNow = new Date().getFullYear()
 const quickFacts = [
   {
     id: 1,
-    fact: `${dtNow - dt.getFullYear()}`,
+    fact: `${dtNow - dt.getFullYear()}+`,
     description: "Years of Operation",
     src: "",
     alt: "",
   },
   {
     id: 2,
-    fact: "75+",
+    fact: "125+",
     description: "Projects Delivered",
     src: "",
     alt: "",
@@ -24,7 +24,7 @@ const quickFacts = [
   },
   {
     id: 4,
-    fact: "32+",
+    fact: "50+",
     description: "Clients",
     src: "",
     alt: "",

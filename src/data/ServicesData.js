@@ -7,6 +7,7 @@ const ServicesData = [
     link: "/services#eg-service-web-development",
     linkText: "More Info",
     bgColor: "#3c83e91a",
+    className: "",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const ServicesData = [
     link: "/services#eg-service-graphic-design",
     linkText: "More Info",
     bgColor: "#3c83e91a",
+    className: "service-reverse",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const ServicesData = [
     link: "/services#eg-service-graphic-design",
     linkText: "More Info",
     bgColor: "#3c83e91a",
+    className: "",
   },
   {
     id: 4,
@@ -34,15 +37,17 @@ const ServicesData = [
     link: "/services#eg-service-web-development",
     linkText: "More Info",
     bgColor: "#ff8e8740",
+    className: "service-reverse",
   },
   {
     id: 5,
     title: "Digital Marketing",
     description:
-      "IDigital marketing is the marketing of products or services using digital technologies, mainly on the Internet, but also including mobile phones, display advertising, and any other digital medium.",
+      "Digital marketing is the marketing of products or services using digital technologies, mainly on the Internet, but also including mobile phones, display advertising, and any other digital medium.",
     link: "/services#eg-service-digital-marketing",
     linkText: "More Info",
     bgColor: "#3c83e91a",
+    className: "",
   },
 ]
 

@@ -60,17 +60,16 @@
   left: calc(50% - 24px);
 }
 
-.eg-service-block {
-  padding-left: 36px;
-  padding-right: 36px;
-}
-
 .single-service-icon {
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 56px;
+  min-width: 56px;
   border-radius: 25rem;
   margin-bottom: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.service-reverse {
+  flex-direction: row-reverse;
 }
 
 .product-icon {

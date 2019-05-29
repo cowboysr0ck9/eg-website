@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import { Col } from "reactstrap"
+import { Col, Row } from "reactstrap"
+import Arrow from "../images/long-arrow-alt-right-solid.svg"
 
 export default class IndividiualService extends Component {
   constructor(props) {
@@ -10,25 +11,26 @@ export default class IndividiualService extends Component {
   }
 
   render() {
-    const { title, description, link, linkText, bgColor } = this.props
+    const { title, description, link, linkText, className } = this.props
     return (
-      <Col xs={12} sm={12} className="my-3">
-        <div className="services-wrapper">
-          <div className="eg-service-block">
-            <div
-              className="single-service-icon animated pulse"
-              style={{ backgroundColor: `${bgColor}` }}
-            >
-              <img src={"#"} alt={"Test"} height={24} />
-            </div>
+      <Col xs={12} sm={12}>
+        <Row className={`${className}`}>
+          <Col
+            xs={12}
+            sm={6}
+            className="d-flex justify-content-center align-items-center"
+          >
+            <img src={"#"} alt={"Test"} />
+          </Col>
 
+          <Col xs={12} sm={6}>
             <p className="fs-20 mb-1 fw-400">{title}</p>
-            <p className="subtitle">{description}</p>
+            <p className="subtitle mt-3">{description}</p>
             <Link className={"btn-link fs-14"} to={link}>
-              {linkText}
+              {linkText} <img src={Arrow} height={14} />
             </Link>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Col>
     )
   }

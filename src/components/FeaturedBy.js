@@ -16,13 +16,13 @@ export default class FeaturedBy extends Component {
             </Col>
             <Col
               xs={12}
-              className="py-3 d-flex justify-content-between"
+              className="py-3 d-flex justify-content-between flex-wrap"
               style={{ opacity: 0.25 }}
             >
               {clientLogos.map(x => {
                 return (
-                  <a id={x.id} href={x.href} rel="nofollow">
-                    <img src={x.src} alt={x.alt} title={x.src} height={28} />
+                  <a id={x.id} href={x.href} rel="nofollow" className="py-2">
+                    <img src={x.src} alt={x.alt} title={x.src} height={32} />
                   </a>
                 )
               })}

@@ -6,7 +6,7 @@ import ServicesData from "../data/ServicesData"
 export default class OurServices extends React.Component {
   render() {
     return (
-      <section className="py-96" id="eg-our-services">
+      <section className="pt-5" id="eg-our-services">
         <Container>
           <Row className="justify-content-center">
             <Col xs={12} className="text-center text-primary">
@@ -25,13 +25,13 @@ export default class OurServices extends React.Component {
                   description={x.description}
                   link={x.link}
                   linkText={x.linkText}
-                  bgColor={x.bgColor}
+                  className={x.className}
                 />
               )
             })}
 
             <Col xs={12} className="text-center">
-              <Link to="/services" className="mt-3 btn btn-primary">
+              <Link to="/services" className="my-5 btn btn-primary">
                 More Info
               </Link>
             </Col>
