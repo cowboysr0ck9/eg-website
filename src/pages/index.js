@@ -127,6 +127,7 @@ const IndexPage = () => (
       <Container>
         <Row>
           <Col xs={12} className="text-center text-primary">
+            <div className="h1-title-accent" />
             WHY US?
           </Col>
           <Col xs={12} className="text-center">
@@ -284,10 +285,10 @@ const IndexPage = () => (
     </section>
 
     {/* Developers */}
-    <section className="py-96 eg-section-accent__top">
+    <section className="py-96">
       <Container>
         <Row className="justify-content-center">
-          <Col xs={12} sm={4} className="mr-sm-5">
+          <Col xs={12} sm={4} className="mr-0 mr-sm-5">
             <img
               src={DeveloperSection}
               className="svg-responsive"
@@ -299,9 +300,9 @@ const IndexPage = () => (
             <div className="d-flex justify-content-start">
               <div className="eg-section-square">01</div>
               <p className="ml-3 eg-section-lead">
-                Our ability to design and develop clients ideas is apart of what
-                speertes us from other creative development agencies in the
-                greater Philadelphia area.
+                We develop enterprise grade web applications based on today's
+                most cutting edge technologies with a focus on React, Node,
+                Express, and WordPress.
               </p>
             </div>
 
@@ -318,20 +319,20 @@ const IndexPage = () => (
     </section>
 
     {/* Designers */}
-    <section className="py-96 eg-section-accent__bottom">
+    <section className="py-96">
       <Container>
         <Row className="justify-content-center">
           <Col
             xs={12}
             sm={4}
-            className="order-1 order-sm-0 mt-5 mt-sm-0 mr-sm-5"
+            className="order-1 order-sm-0 mt-5 mt-sm-0 mr-0 mr-sm-5"
           >
             <div className="d-flex justify-content-start">
               <div className="eg-section-square">02</div>
               <p className="ml-3 eg-section-lead">
-                Our ability to design and develop clients ideas is apart of what
-                speertes us from other creative development agencies in the
-                greater Philadelphia area.
+                Utilizing world class design tools allows us to produce stunning
+                visuals and interfaces for our clients. We have created content
+                for a variety of mediums.
               </p>
             </div>
 
@@ -356,10 +357,10 @@ const IndexPage = () => (
     </section>
 
     {/* Marketers */}
-    <section className="py-96 eg-section-accent__top">
+    <section className="py-96">
       <Container>
         <Row className="justify-content-center">
-          <Col xs={12} sm={4} className=" mr-sm-5">
+          <Col xs={12} sm={4} className="mr-0 mr-sm-5">
             <img
               src={MarketerSection}
               className="svg-responsive"
@@ -370,9 +371,9 @@ const IndexPage = () => (
             <div className="d-flex justify-content-start ">
               <div className="eg-section-square">03</div>
               <p className="ml-3 eg-section-lead">
-                Our ability to design and develop clients ideas is apart of what
-                speertes us from other creative development agencies in the
-                greater Philadelphia area.
+                Social media marketing is our speciality we have organically
+                built social userbases on several accounts by creating a content
+                strategy and roll out plan.
               </p>
             </div>
 

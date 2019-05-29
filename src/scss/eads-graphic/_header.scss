@@ -27,3 +27,13 @@ header .navbar {
 .navbar-toggler {
   cursor: pointer;
 }
+
+// Overlay Menu
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  background-color: $white;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}

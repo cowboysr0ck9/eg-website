@@ -22,6 +22,18 @@ h1,
   display: block;
 }
 
+.h1-title-accent {
+  width: 35px;
+  height: 2px;
+  top: -25px;
+  left: 50%;
+  position: relative;
+  content: "";
+  display: block;
+  margin-left: -17px;
+  background: $primary;
+}
+
 .gradient-text-primary {
   color: $primary;
   background: -webkit-linear-gradient(#0acffe, #495aff);

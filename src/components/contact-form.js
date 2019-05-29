@@ -1,5 +1,6 @@
 import React from "react"
 import { navigateTo } from "gatsby-link"
+import { Link } from "gatsby"
 import {
   Row,
   Col,
@@ -44,10 +45,10 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <section className="py-96">
+      <section className="py-5 bg-light text-dark">
         <Container>
           <Row>
-            <Col className="col-12 mx-auto">
+            <Col xs={12} sm={8} className="mx-auto">
               <Form
                 name="contact"
                 method="post"
@@ -66,16 +67,7 @@ class ContactForm extends React.Component {
                 </p>
 
                 <FormGroup>
-                  <Label>Name:</Label>
-                  <Input
-                    size="lg"
-                    type="text"
-                    name="name"
-                    onChange={this.handleChange}
-                  />
-                </FormGroup>
-                <FormGroup>
-                  <Label>Email:</Label>
+                  <Label>Email</Label>
                   <Input
                     size="lg"
                     type="email"
@@ -85,7 +77,37 @@ class ContactForm extends React.Component {
                 </FormGroup>
 
                 <FormGroup>
-                  <Label>Message:</Label>
+                  <Label>First Name</Label>
+                  <Input
+                    size="lg"
+                    type="text"
+                    name="firstName"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+
+                <FormGroup>
+                  <Label>Last Name</Label>
+                  <Input
+                    size="lg"
+                    type="text"
+                    name="lastName"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+
+                <FormGroup>
+                  <Label>Phone Number</Label>
+                  <Input
+                    size="lg"
+                    type="tel"
+                    name="phoneNumber"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+
+                <FormGroup>
+                  <Label>Message</Label>
                   <Input
                     size="lg"
                     type="textarea"
@@ -93,7 +115,35 @@ class ContactForm extends React.Component {
                     onChange={this.handleChange}
                   />
                 </FormGroup>
+
                 <FormGroup>
+                  <small>
+                    Need NDA first? E-mail us at{" "}
+                    <a
+                      href="mailto:eadsgraphics@gmail.com"
+                      className="text-dark"
+                    >
+                      eadsgraphics@gmail.com
+                    </a>
+                  </small>
+                </FormGroup>
+
+                <FormGroup>
+                  <small>
+                    EadsGraphic needs the contact information you provide to us
+                    to contact you about our products and services. You may
+                    unsubscribe from these communications at anytime. For
+                    information on how to unsubscribe, as well as our privacy
+                    practices and commitment to protecting your privacy, check
+                    out our{" "}
+                    <Link to="/privacy-policy" className="text-dark">
+                      Privacy Policy
+                    </Link>
+                    .
+                  </small>
+                </FormGroup>
+
+                <FormGroup className="d-flex justify-content-end">
                   <Button color="primary" type="submit">
                     Send Message
                   </Button>

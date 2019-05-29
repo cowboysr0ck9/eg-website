@@ -21,20 +21,20 @@ const ContactUsPage = () => (
         </Row>
       </Container>
     </section>
-    <section>
+    <section className="py-96 bg-light">
       <Container>
         <Row>
-          <Col xs={12} sm={6}>
-            <h6>Contact Info</h6>
-            <address>EadsGraphic Philadelphia, PA</address>
-          </Col>
-          <Col xs={12} sm={6}>
-            <h6>Contact Info</h6>
+          <Col xs={12} className="text-center">
+            <div className="h1-title-accent" />
+            <h1>Get started with a project estimate</h1>
+            <p className="text-muted">
+              Fill out the form below, and one of our team members will get back
+              to you shortly.
+            </p>
           </Col>
         </Row>
       </Container>
     </section>
-
     <ContactForm />
     <CallToAction />
   </Layout>

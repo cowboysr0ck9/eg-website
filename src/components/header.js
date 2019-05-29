@@ -4,6 +4,7 @@ import EadsGraphicLogo from "../images/EadsGraphic-main-logo.svg"
 import EadsGraphicLogoWhite from "../images/EadsGraphic-main-logo-white.svg"
 import { Collapse, Navbar, Nav, NavItem, Container } from "reactstrap"
 import HambugerIcon from "../images/hamburger-menu.svg"
+import OverlayMenu from "./overlayMenu"
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -19,6 +20,11 @@ export default class Header extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen,
     })
+  }
+
+  /* Open */
+  openNav() {
+    document.getElementById("mobileNav").style.display = "block"
   }
 
   scrollStyle() {
@@ -52,65 +58,69 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <header id="eg-header">
-        <Container>
-          <Navbar expand="md">
-            <Link className="navbar-brand" to="/">
+      <>
+        {/* Full Screen Mobile Menu */}
+        <OverlayMenu />
+        <header id="eg-header">
+          <Container>
+            <Navbar expand="md">
+              <Link className="navbar-brand" to="/">
+                <img
+                  src={EadsGraphicLogoWhite}
+                  alt="EadsGraphic Official Logo"
+                  id="egLogo"
+                />
+              </Link>
+
               <img
-                src={EadsGraphicLogoWhite}
-                alt="EadsGraphic Official Logo"
-                id="egLogo"
+                src={HambugerIcon}
+                className="navbar-toggler"
+                onClick={this.openNav}
+                alt="Eadsgraphic mobile menu"
+                height={32}
               />
-            </Link>
 
-            <img
-              src={HambugerIcon}
-              className="navbar-toggler"
-              onClick={this.toggle}
-              alt="Eadsgraphic mobile menu"
-              height={32}
-            />
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className="ml-auto align-items-center" navbar>
+                  <NavItem>
+                    <Link className="nav-link jsLink" to="/about-us">
+                      About
+                    </Link>
+                  </NavItem>
 
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto align-items-center" navbar>
-                <NavItem>
-                  <Link className="nav-link jsLink" to="/about-us">
-                    About
-                  </Link>
-                </NavItem>
+                  <NavItem>
+                    <Link className="nav-link jsLink" to="/services">
+                      Services
+                    </Link>
+                  </NavItem>
 
-                <NavItem>
-                  <Link className="nav-link jsLink" to="/services">
-                    Services
-                  </Link>
-                </NavItem>
+                  <NavItem>
+                    <Link className="nav-link jsLink" to="/our-work">
+                      Work
+                    </Link>
+                  </NavItem>
 
-                <NavItem>
-                  <Link className="nav-link jsLink" to="/our-work">
-                    Work
-                  </Link>
-                </NavItem>
+                  <NavItem>
+                    <Link className="nav-link jsLink" to="/contact-us">
+                      Contact
+                    </Link>
+                  </NavItem>
 
-                <NavItem>
-                  <Link className="nav-link jsLink" to="/contact-us">
-                    Contact
-                  </Link>
-                </NavItem>
-
-                <NavItem>
-                  <Link
-                    id="nav-cta-btn"
-                    className="btn btn-primary nav-link"
-                    to="/contact-us"
-                  >
-                    Free Quote
-                  </Link>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
-        </Container>
-      </header>
+                  <NavItem>
+                    <Link
+                      id="nav-cta-btn"
+                      className="btn btn-primary nav-link"
+                      to="/contact-us"
+                    >
+                      Free Quote
+                    </Link>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
+          </Container>
+        </header>
+      </>
     )
   }
 }

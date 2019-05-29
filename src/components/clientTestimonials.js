@@ -85,6 +85,7 @@ export default class ClientTestimonials extends React.Component {
           <Row>
             <Col xs={12}>
               <p className="mb-0 text-primary text-center">
+                <div className="h1-title-accent" />
                 WHAT CLIENTS HAVE TO SAY
               </p>
               <h1 className="text-center">Client Testimonials</h1>
@@ -102,11 +103,13 @@ export default class ClientTestimonials extends React.Component {
                 />
                 {slides}
                 <CarouselControl
+                  className="d-none"
                   direction="prev"
                   directionText="Previous"
                   onClickHandler={this.previous}
                 />
                 <CarouselControl
+                  className="d-none"
                   direction="next"
                   directionText="Next"
                   onClickHandler={this.next}

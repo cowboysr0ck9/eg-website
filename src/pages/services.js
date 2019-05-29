@@ -48,6 +48,7 @@ const ServicesPage = () => (
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0">
+            <div className="h1-title-accent" />
             <p className="text-primary mb-0">CUSTOM FULL STACK</p>
             <h1 className="mb-0">Web Development</h1>
             <p className="mt-4 service-paragraph">
@@ -151,6 +152,7 @@ const ServicesPage = () => (
             />
           </Col>
           <Col xs={12} sm={6}>
+            <div className="h1-title-accent" />
             <p className="text-primary mb-0">TIME TO GET SOCIAL</p>
             <h1 className="mb-0">Digital Marketing</h1>
             <p className="mt-4 service-paragraph">
@@ -207,6 +209,7 @@ const ServicesPage = () => (
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0">
+            <div className="h1-title-accent" />
             <p className="text-primary mb-0">100% PIXEL PERFECT</p>
             <h1 className="mb-0">Creative Design</h1>
             <p className="mt-4 service-paragraph">

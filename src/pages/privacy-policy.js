@@ -19,6 +19,10 @@ const PrivacyPolicyPage = () => (
             </p>
           </Col>
         </Row>
+      </Container>
+    </section>
+    <section>
+      <Container>
         <Row>
           <Col>
             <h1>Privacy Policy</h1>

@@ -10,6 +10,7 @@ export default class OurServices extends React.Component {
         <Container>
           <Row className="justify-content-center">
             <Col xs={12} className="text-center text-primary">
+              <div className="h1-title-accent" />
               AREAS OF INTEREST
             </Col>
             <Col xs={12} className="text-center">
