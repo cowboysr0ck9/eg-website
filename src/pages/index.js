@@ -1,14 +1,16 @@
 import React from "react"
+import { Container, Row, Col } from "reactstrap"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
-import { Container, Row, Col } from "reactstrap"
 import Header from "../components/header"
 import CallToAction from "../components/callToAction"
 import Typed from "react-typed"
 import ClientTestimonials from "../components/clientTestimonials"
-import { Link } from "gatsby"
 import OurServices from "../components/ourServices"
+import FeaturedBy from "../components/FeaturedBy"
+import QuickFacts from "../components/QuickFacts"
 
 // Imports Why Us? Icons
 import DevelopersIcon from "../images/why-us-icons/eads-graphic-developers-icon.svg"
@@ -122,8 +124,11 @@ const IndexPage = () => (
         </Row>
       </Container>
     </section>
+
+    <FeaturedBy />
+
     {/* Why Us? Section */}
-    <section className="py-96 why-us-section-bg">
+    <section className="py-5 why-us-section-bg">
       <Container>
         <Row>
           <Col xs={12} className="text-center text-primary">
@@ -390,7 +395,7 @@ const IndexPage = () => (
     </section>
 
     <OurServices />
-
+    <QuickFacts />
     <ClientTestimonials />
     <CallToAction />
   </Layout>

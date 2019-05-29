@@ -55,3 +55,17 @@
   background-image: url("../images/section-accent.svg");
   background-position: bottom 0% right 8%;
 }
+
+.thanks {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(45deg, #3c83e9, #7dd5ff);
+}
+
+.services-wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}

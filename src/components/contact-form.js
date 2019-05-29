@@ -52,7 +52,7 @@ class ContactForm extends React.Component {
               <Form
                 name="contact"
                 method="post"
-                action="/"
+                action="/thank-you"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}

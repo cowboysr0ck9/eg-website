@@ -112,7 +112,7 @@ export default class Header extends React.Component {
                       className="btn btn-primary nav-link"
                       to="/contact-us"
                     >
-                      Free Quote
+                      Get Quote
                     </Link>
                   </NavItem>
                 </Nav>

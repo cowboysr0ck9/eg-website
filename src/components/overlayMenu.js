@@ -16,7 +16,8 @@ export default class OverlayMenu extends Component {
   render() {
     return (
       <div id="mobileNav" class="overlay">
-        <a class="closebtn" onClick={this.closeNav}>
+        {/* eslint-disable-next-line */}
+        <a href={"#"} class="closebtn" onClick={this.closeNav}>
           &times;
         </a>
         <div class="overlay-content">
