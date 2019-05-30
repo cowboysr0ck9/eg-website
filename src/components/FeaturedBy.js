@@ -11,7 +11,7 @@ export default class FeaturedBy extends Component {
             <Col xs={12}>
               <div className="h1-title-accent" />
               <h6 className="text-muted fs-14">
-                OUR PROJECTS WERE FEATURED BY
+                OUR PROJECTS HAVE BEEN FEATURED BY
               </h6>
             </Col>
             <Col

@@ -175,7 +175,11 @@ export default class Footer extends React.Component {
                 © {new Date().getFullYear()}
                 <Link to="/"> EadsGraphic</Link>
               </span>
-              <span>English</span>
+              <span>
+                <a href="https://fontawesome.com/license" rel="nofollow">
+                  Font Awesome License
+                </a>
+              </span>
             </Col>
           </Row>
         </Container>

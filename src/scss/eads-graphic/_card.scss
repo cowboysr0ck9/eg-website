@@ -88,5 +88,46 @@
 
 .subtitle {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 28px;
+}
+
+// Circles
+.circle-holder {
+  height: 194px;
+  width: 194px;
+  position: relative;
+}
+
+.circle {
+  border: 1px solid rgba(30, 31, 36, 0.1);
+  border-radius: 50%;
+}
+
+.circle-1 {
+  height: 194px;
+  position: absolute;
+  top: 0;
+  width: 194px;
+}
+
+.circle-2 {
+  height: 136px;
+  width: 136px;
+  position: absolute;
+  top: calc(50% - 68px);
+  left: calc(50% - 68px);
+}
+
+.circle-3 {
+  height: 64px;
+  width: 64px;
+  background-color: white;
+  box-shadow: 0px 6px 20px 0 rgba(30, 31, 36, 0.1);
+  border: 1px solid transparent;
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

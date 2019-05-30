@@ -7,7 +7,7 @@ export default class OurServices extends React.Component {
   render() {
     return (
       <section className="pt-5" id="eg-our-services">
-        <Container>
+        <Container className="service-wrap">
           <Row className="justify-content-center">
             <Col xs={12} className="text-center text-primary">
               <div className="h1-title-accent" />
@@ -24,6 +24,7 @@ export default class OurServices extends React.Component {
                   title={x.title}
                   description={x.description}
                   link={x.link}
+                  img={x.img}
                   linkText={x.linkText}
                   className={x.className}
                 />
