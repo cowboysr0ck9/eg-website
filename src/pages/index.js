@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
@@ -31,10 +31,13 @@ import InstagramSocial from "../images/social-icons/instagram.svg"
 import DribbbleSocial from "../images/social-icons/dribbble.svg"
 import GithubSocial from "../images/social-icons/github.svg"
 
+// Imports Gatsby Lazy Loader
+import Img from "gatsby-image"
+
 // Sets Default Icon Size
 const iconSize = 30
 
-const IndexPage = () => (
+const IndexPage = props => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Helmet>

@@ -21,11 +21,11 @@ const ContactUsPage = () => (
         </Row>
       </Container>
     </section>
-    <section className="py-96 bg-light">
+    <section className="pt-5 bg-light">
       <Container>
         <Row>
           <Col xs={12} className="text-center">
-            <div className="h1-title-accent" />
+            <div className="mt-5 h1-title-accent" />
             <h1>Get started with a project estimate</h1>
             <p className="text-muted">
               Fill out the form below, and one of our team members will get back

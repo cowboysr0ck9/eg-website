@@ -116,26 +116,6 @@ export default class ClientTestimonials extends React.Component {
                 />
               </Carousel>
             </Col>
-
-            {/* <img
-                className="eg-testimonial-avatar"
-                src={JamieErfle}
-                alt="Jamie Erfle's client testimonial"
-              /> */}
-            {/* <Card className="eg-testimonial">
-                <CardBody>
-                  <h6 className="text-center">Jamie Gressen Erfle</h6>
-                  <p className="text-center eg-sub-title">
-                    Jamie Erfle | Keller Williams Reality
-                  </p>
-                  <p>
-                    Tyler is great to work with! He takes initiative in
-                    providing design and content for my webpage and social media
-                    ads. He is also extremely responsive and implements ideas
-                    quickly.
-                  </p>
-                </CardBody>
-              </Card> */}
           </Row>
         </Container>
       </section>
