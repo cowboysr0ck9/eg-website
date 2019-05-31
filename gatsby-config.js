@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `EadsGraphic`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `EadsGraphic is a creative technology agency operating in the greater Philadelphia area specializing in web development, graphic design, and digitial marketing.`,
     author: `@eadsgraphic`,
     siteUrl: `https://www.eadsgraphic.com`,
   },
@@ -36,6 +36,6 @@ module.exports = {
         trackingId: "UA-78811458-1",
       },
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
   ],
 }
