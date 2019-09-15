@@ -28,12 +28,13 @@ const OurWorkPage = () => (
         <Row className="justify-content-center">
           {youtube.map(x => {
             return (
-              <Col className="px-0 my-0">
+              <Col lg={4} className="px-0 my-0">
                 <iframe
                   width="560"
                   height="315"
                   src={`${x.link}`}
                   frameborder="0"
+                  className="img-fluid"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 />

@@ -19,7 +19,16 @@ import CallToAction from "../components/callToAction"
 import twins from "../images/matt-tyler-eads.png"
 
 // Resume Info
-import { innovationLab, uiTeam, headStrong, hcphub } from "../data/ResumeInfo"
+import {
+  innovationLab,
+  uiTeam,
+  headStrong,
+  hcphub,
+  eadsGraphic,
+} from "../data/ResumeInfo"
+
+// Contact Form
+import ContactFrom from "../components/contact-form"
 
 export default class AboutUsPage extends Component {
   constructor(props) {
@@ -49,8 +58,8 @@ export default class AboutUsPage extends Component {
 
         <section className="twins">
           <Container>
-            <Row className="align-items-center">
-              <Col lg={6} className="align-items-end">
+            <Row>
+              <Col lg={6}>
                 <h1 className="twin-title pt-5">
                   Time to hear
                   <br />
@@ -65,8 +74,12 @@ export default class AboutUsPage extends Component {
                   variety of clients.
                 </p>
               </Col>
-              <Col lg={6} className="d-flex justify-content-center">
-                <img src={twins} alt={"Matt and Tyler Eads"} />
+              <Col lg={6} className="d-flex align-items-end">
+                <img
+                  src={twins}
+                  alt={"Matt and Tyler Eads"}
+                  className={"img-fluid"}
+                />
               </Col>
             </Row>
           </Container>
@@ -116,12 +129,14 @@ export default class AboutUsPage extends Component {
             <section className="resume-work-section">
               <Container>
                 <Row>
-                  <Col lg={12}>
+                  <Col lg={12} className={"mb-3"}>
                     <div className="d-flex justify-content-between align-items-center">
                       <span className="d-block">
-                        <h5>SEIC Investments</h5>
+                        <h5 className="mb-0 fw-500 text-primary">
+                          SEI Investments
+                        </h5>
                       </span>
-                      <span className="d-block">Oaks, PA</span>
+                      <span className="d-block fw-500">Oaks, PA</span>
                     </div>
 
                     <div className="d-flex justify-content-between align-items-center">
@@ -136,7 +151,7 @@ export default class AboutUsPage extends Component {
                     </div>
                   </Col>
                   <Col lg={12}>
-                    <ul>
+                    <ul className="experience-list">
                       {innovationLab.map((x, i) => {
                         return <li id={i}>{x.msg}</li>
                       })}
@@ -149,7 +164,7 @@ export default class AboutUsPage extends Component {
                     <small>
                       SEI UI/UX Governance & Standards | UI/UX Developer
                     </small>
-                    <ul className="unstyled">
+                    <ul className="experience-list">
                       {uiTeam.map((x, i) => {
                         return <li id={i}>{x.msg}</li>
                       })}
@@ -163,17 +178,21 @@ export default class AboutUsPage extends Component {
             <section className="resume-work-section">
               <Container>
                 <Row>
-                  <Col lg={12}>
+                  <Col lg={12} className={"mb-3"}>
                     <div className="d-flex justify-content-between align-items-center">
                       <span className="d-block">
-                        <h5>EadsGraphic.com</h5>
+                        <h5 className="mb-0 fw-500 text-primary">
+                          EadsGraphic.com
+                        </h5>
                       </span>
-                      <span className="d-block">Pennsylvania</span>
+                      <span className="d-block fw-500">Pennsylvania</span>
                     </div>
 
                     <div className="d-flex justify-content-between align-items-center">
                       <span className="d-block">
-                        <small>Freelance Creative Developer</small>
+                        <small>
+                          Co-founder of freeelance creative development team
+                        </small>
                       </span>
                       <span className="d-block">
                         <small>August 2012 - Present</small>
@@ -181,8 +200,8 @@ export default class AboutUsPage extends Component {
                     </div>
                   </Col>
                   <Col lg={12}>
-                    <ul>
-                      {innovationLab.map((x, i) => {
+                    <ul className="experience-list">
+                      {eadsGraphic.map((x, i) => {
                         return <li id={i}>{x.msg}</li>
                       })}
                     </ul>
@@ -195,17 +214,17 @@ export default class AboutUsPage extends Component {
             <section className="resume-work-section">
               <Container>
                 <Row>
-                  <Col lg={12}>
+                  <Col lg={12} className={"mb-3"}>
                     <div className="d-flex justify-content-between align-items-center">
                       <span className="d-block">
-                        <h5 className="d-inline pr-2">
+                        <h5 className="mb-0 d-inline pr-2 fw-500 text-primary">
                           The Headstrong™ Foundation
                         </h5>
                         <small className="d-inline">
                           <em>501(c) non-profit </em>
                         </small>
                       </span>
-                      <span className="d-block">Holmes, PA</span>
+                      <span className="d-block fw-500">Holmes, PA</span>
                     </div>
 
                     <div className="d-flex justify-content-between align-items-center">
@@ -218,7 +237,7 @@ export default class AboutUsPage extends Component {
                     </div>
                   </Col>
                   <Col lg={12}>
-                    <ul>
+                    <ul className="experience-list">
                       {headStrong.map((x, i) => {
                         return <li id={i}>{x.msg}</li>
                       })}
@@ -232,12 +251,14 @@ export default class AboutUsPage extends Component {
             <section className="resume-work-section">
               <Container>
                 <Row>
-                  <Col lg={12}>
+                  <Col lg={12} className={"mb-3"}>
                     <div className="d-flex justify-content-between align-items-center">
                       <span className="d-block">
-                        <h5 className="d-inline pr-2">HCPHUB®</h5>
+                        <h5 className="mb-0 d-inline pr-2 fw-500 text-primary">
+                          HCPHUB
+                        </h5>
                       </span>
-                      <span className="d-block">Malvern, PA</span>
+                      <span className="d-block fw-500">Malvern, PA</span>
                     </div>
 
                     <div className="d-flex justify-content-between align-items-center">
@@ -250,7 +271,7 @@ export default class AboutUsPage extends Component {
                     </div>
                   </Col>
                   <Col lg={12}>
-                    <ul>
+                    <ul className="experience-list">
                       {hcphub.map((x, i) => {
                         return <li id={i}>{x.msg}</li>
                       })}
@@ -261,17 +282,17 @@ export default class AboutUsPage extends Component {
             </section>
 
             {/* Education */}
-            <section className="resume-work-section">
+            <section className="resume-work-section pb-5">
               <Container>
                 <Row>
-                  <Col lg={12}>
+                  <Col lg={12} className={"mb-3"}>
                     <div className="d-flex justify-content-between align-items-center">
                       <span className="d-block">
-                        <h5 className="d-inline pr-2">
+                        <h5 className="mb-0 d-inline pr-2 fw-500 text-primary">
                           Saint Joseph's University
                         </h5>
                       </span>
-                      <span className="d-block">Philadelphia, PA</span>
+                      <span className="d-block fw-500">Philadelphia, PA</span>
                     </div>
 
                     <div className="d-flex justify-content-between align-items-center">
@@ -284,7 +305,7 @@ export default class AboutUsPage extends Component {
                     </div>
                   </Col>
                   <Col lg={12}>
-                    <ul>
+                    <ul className="experience-list">
                       <li>
                         Business Intelligence & Analytics | Major GPA 3.67
                       </li>
@@ -309,7 +330,7 @@ export default class AboutUsPage extends Component {
             </section>
           </TabPane>
         </TabContent>
-
+        <ContactFrom />
         <CallToAction />
       </Layout>
     )
