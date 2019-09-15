@@ -44,7 +44,7 @@ const ServicesPage = () => (
     </section>
 
     {/* Developers Section */}
-    <section className="py-192 bg-light" id="eg-service-web-development">
+    <section className="py-192" id="eg-service-web-development">
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0">
@@ -205,7 +205,7 @@ const ServicesPage = () => (
     </section>
 
     {/* Design Section */}
-    <section className="py-192 bg-light" id="eg-service-graphic-design">
+    <section className="py-192" id="eg-service-graphic-design">
       <Container>
         <Row>
           <Col xs={12} sm={6} className="order-1 order-sm-0">

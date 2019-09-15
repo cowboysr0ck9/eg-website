@@ -35,7 +35,7 @@ export default class Header extends React.Component {
     let scrollY = window.scrollY
 
     let i = 0
-    if (scrollY > 50) {
+    if (scrollY > 32) {
       globalHeader.classList.add("header-scrolled")
       egLogo.setAttribute("src", EadsGraphicLogo)
 
